@@ -1,0 +1,29 @@
+import turtle
+
+def draw_3shapes():
+    window = turtle.Screen()
+    window.bgcolor("red")
+    brad = turtle.Turtle()
+    brad.shape("turtle")
+    brad.color("yellow")
+    brad.speed(4)
+    for i in range(1,5):
+        brad.forward(100)
+        brad.right(90)
+        #i += i    
+
+    ted = turtle.Turtle()
+    ted.shape("arrow")
+    ted.color("blue")
+    ted.circle(100)
+ 
+    sofia = turtle.Turtle()
+    sofia.color("white")
+    for j in range(1, 3):
+        sofia.right(120)
+        sofia.forward(100)
+    sofia.goto(0, 0)
+        
+    window.exitonclick()
+        
+draw_3shapes()
