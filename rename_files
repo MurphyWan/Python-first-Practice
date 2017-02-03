@@ -1,0 +1,7 @@
+import os
+def rename_filess():
+    #get file names from a folder
+    file_list=os.listdir(r"E:\reading\Programming\alphabet\alphabet\test")
+    print(file_list)
+    #for each file, rename filename
+    
