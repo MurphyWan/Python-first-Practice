@@ -1,0 +1,42 @@
+import fresh_tomatoes
+import media
+
+toy_story = media.Movie("Toy Story",
+                        "A story of a boy and his toys that come to life",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SY1000_SX670_AL_.jpg",
+                        "https://www.youtube.com/watch?v=vwyZH85NQC4")
+#print(toy_story.storyline)
+avatar = media.Movie("Avatar",
+                        "A marine on an alien planet",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_.jpg",
+                        "https://www.youtube.com/watch?v=-9ceBgWV8io")
+#print(avatar.storyline)
+#avatar.show_trailer()
+
+the_godfather = media.Movie("The Godfather",
+                        "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmNjQ1ZDYtNDgzMy00OGE0LWE4N2YtNTkzNWQ5ZDhlNGJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,704,1000_AL_.jpg",
+                        "https://www.youtube.com/watch?v=sY1S34973zA")
+#the_godfather.show_trailer()
+
+
+the_shawshank_redemption = media.Movie("The Shawshank Redemption",
+                        "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SY1000_CR0,0,672,1000_AL_.jpg",
+                        "https://www.youtube.com/watch?v=sY1S34973zA")
+
+schindlers_List = media.Movie("Name of Movie Schindler's List",
+                        "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,666,1000_AL_.jpg",
+                        "https://www.youtube.com/watch?v=sY1S34973zA")
+
+inception = media.Movie("Name of Movie call Inception",
+                        "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+                        "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+                        "https://www.youtube.com/watch?v=sY1S34973zA")
+
+#movies = [the_shawshank_redemption, schindlers_List, inception, toy_story, avatar, the_godfather]
+#fresh_tomatoes.open_movies_page(movies)
+
+
+s
