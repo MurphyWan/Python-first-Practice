@@ -316,18 +316,7 @@ print(a[0][3])
 But note:
 Multidimensional list is not a matrix. Mathematical operators may lead to the results that you don't want to see. For matrix computations, we will spend a lot of time on it tomorrow.
 
-## Control structures
-
-## 条件语句（Conditions）
-* 条件控制元素包括if，else和elif。
-* 对于条件语句，我们有如下几种：
-|Name|     Notation|
-|----|:-----------:|
-|larger|       >|
-|smaller|        <|
-|equal|      ==|
-|larger or equal |     >=|
-|smaller or equal |     <=|
+## Contrller or equal |     <=|
 |not equal        | !=|
 
 * 对于多个条件同时使用的情况，我们使用and, or 和not来做连接。
@@ -349,6 +338,21 @@ if  a[0]< a[1]  and a[0]< a[2] :
          b.append(a[1]) 
   # This piece of code is not done yet.
   # Please  complete  it !!!```
+'''ol structures
+ller or equal |     <=|332|not equal        | !=|333334* 对于多个条件同时使用的情况，我们使用and, or 和not来做连接。335----------336* Conidtional control elements include if else and elif.* For conditionsr we haveName     Notationlarger       >smaller        <equal      ==larger or equal      >=smaller or equal      <=not equal         !=* For multi-conditionsr we use and. or and not to connect337338339## 示例和练习：条件语句 (Example & exercise: conditions)340```python341a = [24, 16, 54]342b = []343if  a[0]< a[1]  and a[0]< a[2] :344    b.append(a[0])    345    if  a[1]  <  a[2]:        346         b.append(a[1])        347         b.append(a[2])    348    else:        349         b.append(a[2])        350         b.append(a[1]) 351  # This piece of code is not done yet.352  # Please  complete  it !!!```353'''
+
+
+## 条件语句（Conditions）
+* 条件控制元素包括if，else和elif。
+* 对于条件语句，我们有如下几种：
+
+|Name|     Notation|
+|----|:-----------:|
+|larger|       >|
+|smaller|        <|
+|equal|      ==|
+|larger or equal |     >=|
+|sma
 
 ## 循环语句 （Loops）
 * 循环语句有很多不同的样式代码，我们只提供两个常用的语句。
