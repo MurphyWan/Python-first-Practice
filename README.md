@@ -171,42 +171,115 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 * Remarks:  - In Python 2.7, an int operates with another int will lead to an int result. However, a float operates with an int will lead to a float.  - In Python 3.x, an int operates with another int will lead to a float.
 
 
-## 算数运算符（Arithmetic operators）|Name|Notation|Examples||----|:--------:|:--------:||Addition|+| a + b ||Subtraction|-|c - b||Multiplication|*|x*y||Division|/|x/z||Modulus|%|x%a||Exponent|**|a**x|
+## 算数运算符（Arithmetic operators）
+
+|Name|Notation|Examples|
+|----|:--------:|:--------:|
+|Addition|+| a + b |
+|Subtraction|-|c - b|
+|Multiplication|*|x*y|
+|Division|/|x/z|
+|Modulus|%|x%a|
+|Exponent|**|a**x|
 
 
-## 练习2（Exercise 2）* 猜下面代码的结果。执行他们，看答案。* Try to guess the results of the following code. Implement them and check your answers. - a = 10   # int - b = 3.14 # fLoat - c = 3    #int - d = a ** 2 # square of a - print (type (d))    # return the type of d  - print (type (d/l0)) # return the type of d/l0 - print (type (a/b))  # return the type of a/b - print (type (a/c))  # return the type of a/c - print (type (b*d))  # return the type of b*d
+## 练习2（Exercise 2）
+* 猜下面代码的结果。执行他们，看答案。
+* Try to guess the results of the following code. Implement them and check your answers. 
+- a = 10   # int 
+- b = 3.14 # fLoat 
+- c = 3    #int 
+- d = a ** 2 # square of a 
+- print (type (d))    # return the type of d  
+- print (type (d/l0)) # return the type of d/l0 
+- print (type (a/b))  # return the type of a/b 
+- print (type (a/c))  # return the type of a/c 
+- print (type (b*d))  # return the type of b*d
 
 
 ## 浮点数的精度（Precision of float）
-* 尝试在您的控制台中键入0.1 + 0.2。 你会发现这个值是  - 0.30000000000000004* 这是二进制浮点的本质。 您可以在支持硬件浮点运算的所有语言中看到同样的东西。* 可以使用“round（）”功能控制显示精度，但也有上述情况，这意味着round(9.995,2)返回9.99而不是10，因为9.995的存储稍小于9.995。* decimal Library将给出精确的存储值，请参见以下示例。
-----------------* Try to type 0.1+0.2 in your console. You will find that the value is  - 0.30000000000000004            * This is in the very nature of binary floating-point. You can see the same kind of thing in all languages that support your hardware's floating-point arithmetic.* The display precision can be controled using "round()" function, but it also has above situation, which means round(9.995, 2) returns 9.99 rather than 10, since 9.995 is stored slightly smaller than 9.995.* Library decimal would give precise stored value, See the following example.
+* 尝试在您的控制台中键入0.1 + 0.2。 你会发现这个值是  
+- 0.30000000000000004
+
+* 这是二进制浮点的本质。 您可以在支持硬件浮点运算的所有语言中看到同样的东西。
+* 可以使用“round（）”功能控制显示精度，但也有上述情况，这意味着round(9.995,2)返回9.99而不是10，因为9.995的存储稍小于9.995。
+* decimal Library将给出精确的存储值，请参见以下示例。
+
+----------------
+* Try to type 0.1+0.2 in your console. You will find that the value is  - 0.30000000000000004            * This is in the very nature of binary floating-point. You can see the same kind of thing in all languages that support your hardware's floating-point arithmetic.* The display precision can be controled using "round()" function, but it also has above situation, which means round(9.995, 2) returns 9.99 rather than 10, since 9.995 is stored slightly smaller than 9.995.* Library decimal would give precise stored value, See the following example.
 
 
 
-## 例子（Example）* import  decimal  # import  the  libray  "decimal"    #display  2  decimal  precision* print (round (3*1415 ,   2))   #  result  3. 14* print (round (9 .995 ,   2))   #  result  9. 99
+## 例子（Example）
+* import  decimal  
+# import  the  libray  "decimal"    
+# display  2  decimal  precision
+* print (round (3*1415 ,   2))   #  result  3. 14
+* print (round (9 .995 ,   2))   #  result  9. 99
 
-* #call   function   "Decimal "  from lib "decimal"* print (decimal.Decimal (9.995))* The last "print" returns
+* #call   function   "Decimal "  from lib "decimal"
+* print (decimal.Decimal (9.995))
+* The last "print" returns
 9.9949999999999992184029906638897955417633056640625,
 * which is exactly how 9.995 is stored in the hardware.
+
 ## 练习3：字符串str的一些功能（Exercise3:Some functions for str）
-```pythont = 'He is a string. Who are you?'print(t.capitalize()) # Cap first letterprint(t.split()) # split by wordsprint(t.find('i')) # return index of 'i'print(t.find('in')) # index of 'i' in 'in'print(t.find('Python')) # find sth not inprint(t[0:4]) # returu from index 0 to 3print(t.replace(' ','|')) # replace by '|'
-w = 'http://www.google.com'print(w.strip('http://')) #delete sth```
-    He is a string. who are you?    ['He', 'is', 'a', 'string.', 'Who', 'are', 'you?']    3    11    -1    He i    He|is|a|string.|Who|are|you?    www.google.com    
+```pythont = 'He is a string. Who are you?'
+print(t.capitalize()) # Cap first letter
+print(t.split()) # split by words
+print(t.find('i')) # return index of 'i'
+print(t.find('in')) # index of 'i' in 'in'
+print(t.find('Python')) # find sth not in
+print(t[0:4]) # returu from index 0 to 3
+print(t.replace(' ','|')) # replace by '|'
+w = 'http://www.google.com'
+print(w.strip('http://')) #delete sth```
+    He is a string. who are you?    
+    ['He', 'is', 'a', 'string.', 'Who', 'are', 'you?']    
+    3    
+    11    
+    -1    
+    He i    
+    He|is|a|string.|Who|are|you?    
+    www.google.com    
+
 ## Python功能：索引（Python features: Indexing）
-* Python具有与C ++类似的索引规则，其起始索引为0。* 当通过索引返回值时，间隔实际上是[，]样式，这意味着不包括终端索引。
+* Python具有与C ++类似的索引规则，其起始索引为0。
+* 当通过索引返回值时，间隔实际上是[，]样式，这意味着不包括终端索引。
+
 --------------------------------
 * Python  has similar indexing rules with C++ , where its starting index is 0.* When you return values by index, the interval is actually [  , ) style, which means that the terminal index will not be included.
 ## 基本的数据结构（Basic data structures）
-|Name| Nation| Declaration e.g.||----|-------|-----------------||Tuple| tuple| b = (1,2.5, 'data')||List|list|c = [1,2.5,'data']||Dictionary|dict|d = {'Name': 'Kobe', 'Country':'US'}||Set|set|e = set(['u','d','ud','d','du'])|
-* 元组（tuple）只有几种方法可以更改。* 列表（list）比元组更灵活。* 字典（dict）是一个键值对存储对象。* 集合（set）是对象中唯一的无序集合对象。
+|Name| Nation| Declaration e.g.|
+|----|-------|-----------------|
+|Tuple| tuple| b = (1,2.5, 'data')|
+|List|list|c = [1,2.5,'data']|
+|Dictionary|dict|d = {'Name': 'Kobe', 'Country':'US'}|
+|Set|set|e = set(['u','d','ud','d','du'])|
+
+* 元组（tuple）只有几种方法可以更改。
+* 列表（list）比元组更灵活。
+* 字典（dict）是一个键值对存储对象。
+* 集合（set）是对象中唯一的无序集合对象。
 -------------------------------------------------------
 * tuple has only a few methods available to change.* list is much more flexible than tuples.* dict is a key-value store object.* set is an unordered collection object of unique objects.
+
+
 ## 列表的一些有用功能（Some useful functions for list）
-```pythonl = [1, 2, 3.14, 'data'] #listprint (type(l))l.append ([4,  3])print(l)l.extend (['delta' ,5 ,6] )   #add  a  listprint(l)l.insert(3, 'beta')  #insert  before  index 3print(l)l.remove ('data')   #delete an elementprint(l)
+```python
+
+l = [1, 2, 3.14, 'data'] #list
+print (type(l))l.append ([4,  3])
+print(l)l.extend (['delta' ,5 ,6] )   #add  a  list
+print(l)l.insert(3, 'beta')  #insert  before  index 3
+print(l)l.remove ('data')   #delete an elementprint(l)
 ```
     <class 'list'>    [1, 2, 3.14, 'data', [4, 3]]    [1, 2, 3.14, 'data', [4, 3], 'delta', 5, 6]    [1, 2, 3.14, 'beta', 'data', [4, 3], 'delta', 5, 6]    [1, 2, 3.14, 'beta', [4, 3], 'delta', 5, 6]    
+
+
 ## Python功能：参考对象（Python features: Refer for object）
-* 在Python中，如果要将值从一个对象传递给另一个对象，则=(等号)将按地址传递值。* 例如，
+* 在Python中，如果要将值从一个对象传递给另一个对象，则=(等号)将按地址传递值。
+* 例如，
 x = [1, 2. 3, 4]
 y = x
 y[0] = 5
@@ -217,10 +290,14 @@ z  =  x.copy()
 z[0] = 5
 print (x)
 输出将会是[5,2,3,4],[1,2,3,4]
---------------------------------------------------* In Python if you want pass the value from one object to another, = will pass the value by address.* For example,
+--------------------------------------------------
+
+* In Python if you want pass the value from one object to another, = will pass the value by address.* For example,
   - x = [1, 2. 3, 4]  - y = x  - y[0] = 5  - print(x)
   - x = [1, 2, 3, 4]  - z  =  x.copy()  - z[0] = 5  - print (x)
   - The output will be [5,2,3,4],[1,2,3,4]
+
+
 ## 多维列表（Multidimensional  list）
 我们可以创建一个包含多行的列表
 a  =  [[1,2 , 3 ,4],[1,2 ,3,4],[1,2 ,3]] 
@@ -228,7 +305,9 @@ print(a)
 print(a[0][3])
 但请注意：
 多维列表不是矩阵。 数学运算符可能会导致您不想看到的结果。 对于矩阵计算，我们将在明天花费大量的时间。
--------------------------We can create a list with multi-rows like
+-------------------------
+
+We can create a list with multi-rows like
 
 a  =  [[1,2 , 3 ,4],[1,2 ,3,4],[1,2 ,3]]
 print(a)
@@ -236,20 +315,50 @@ print(a[0][3])
 
 But note:
 Multidimensional list is not a matrix. Mathematical operators may lead to the results that you don't want to see. For matrix computations, we will spend a lot of time on it tomorrow.
+
 ## Control structures
+
 ## 条件语句（Conditions）
-* 条件控制元素包括if，else和elif。* 对于条件语句，我们有如下几种：
-|Name|     Notation||----|:-----------:||larger|       >||smaller|        <||equal|      ==||larger or equal |     >=||smaller or equal |     <=||not equal        | !=|
+* 条件控制元素包括if，else和elif。
+* 对于条件语句，我们有如下几种：
+|Name|     Notation|
+|----|:-----------:|
+|larger|       >|
+|smaller|        <|
+|equal|      ==|
+|larger or equal |     >=|
+|smaller or equal |     <=|
+|not equal        | !=|
+
 * 对于多个条件同时使用的情况，我们使用and, or 和not来做连接。
 ----------
 * Conidtional control elements include if else and elif.* For conditionsr we haveName     Notationlarger       >smaller        <equal      ==larger or equal      >=smaller or equal      <=not equal         !=* For multi-conditionsr we use and. or and not to connect
+
+
 ## 示例和练习：条件语句 (Example & exercise: conditions)
-```pythona = [24, 16, 54]b = []if  a[0]< a[1]  and a[0]< a[2] :    b.append(a[0])    if  a[1]  <  a[2]:        b.append(a[1])        b.append(a[2])    else:        b.append(a[2])        b.append(a[1])# This piece of code is not done yet.# Please  complete  it !!!```
+```python
+a = [24, 16, 54]
+b = []
+if  a[0]< a[1]  and a[0]< a[2] :
+    b.append(a[0])    
+    if  a[1]  <  a[2]:        
+         b.append(a[1])        
+         b.append(a[2])    
+    else:        
+         b.append(a[2])        
+         b.append(a[1]) 
+  # This piece of code is not done yet.
+  # Please  complete  it !!!```
+
 ## 循环语句 （Loops）
 * 循环语句有很多不同的样式代码，我们只提供两个常用的语句。
 1/                     for...in ... ：statement A
-     是循环中最常用的语句，通常与range（start,end,step）一起使用,start为起始值，end为结束值，step为步长。 例如，                range(0,8,1)  给出[0，1，2，3，4，5，6，7]
-2/                     while ...：statement A        将会执行A语句，直到满足while的条件。
+     是循环中最常用的语句，通常与range（start,end,step）一起使用,start为起始值，end为结束值，step为步长。 例如，                
+     range(0,8,1)  给出[0，1，2，3，4，5，6，7]
+
+2/                     
+        while ...：statement A        
+     将会执行A语句，直到满足while的条件。
 -------* There are many different style code for loops, We just present two common used statements.
   -     for _ in ... : statement A
     is the most common used statement for loops, ait is combined with range(starC end, step). For e.g.,
