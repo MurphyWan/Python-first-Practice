@@ -101,7 +101,8 @@ Python 2 or 3?* Python 3 is not backward compatible with Python 2 which means so
 * Spyder（http://pythonhosted.org/spyder/ ）：交互式开发环境
 
 
-## 管理你的Anaconda* 在你的终端或cmd，输入
+## 管理你的Anaconda
+* 在你的终端或cmd，输入
  conda list
 * 您可以看到已安装的软件包列表
 * 更多的管理方法可以在这里找到：  http://conda.pydata.org/docs/using/pkgs.html
