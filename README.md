@@ -513,11 +513,26 @@ for i in range(2, 10, 3):        
 a = 0
 sumup = O
 while  a < 100 :
-    a +- 1
+    a + 1
     sumup += a
     print ( sumup)
 ```
 ```python
+```
+## break和continue. 
+
+* You can use the keyword break inside a loop to leave the loop.. 
+* You can use the keyword continue inside a loop to stop pracessing the current iteration of the loop and immediately go on to the next round.
+* E.g.
+```python
+# search the first
+# be divided by 17
+for i in range(300, 351):
+    if i % 17 == O:
+        print (i)
+        break
+    else :
+        cantinue
 ```
 
 
