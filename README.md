@@ -117,7 +117,7 @@ Python 2 or 3?* Python 3 is not backward compatible with Python 2 which means so
 
 
 ## 今天的安排
-* 早上：Python编程基础介绍。 在上午的会议中，您将需要做一些练习。 但只是一些热身的水平   问题，他们会给你一个关于Python编程的想法。
+* 早上：Python编程基础介绍。 在上午的会议中，您将需要做一些练习。 只是一些热身水平的问题，他们会给你一个关于Python编程的想法。
 * 下午：半小时内完成介绍部分。 那么我们会有三个大问题要解决。 他们将是今天的一个很好的总结：讲座。 你将有一个小时独立工作。 然后，我将在过去半小时内提供分析和解决方案。
 
 Today's arrangements* Morning: An introduction to Python programming basics. There will be a few exercises you need to do during the morning session.  But just some warm-up level  questions, and they will give you an idea about Python programming.* Afternoon: We will finish the introduction part in half an hour. Then we will have three big problems to solve. They will be a good summary of today:s lecture. You will have one hour to work them out independently. I will then provide the analytics and the solutions in the last half an hour.
@@ -125,16 +125,23 @@ Today's arrangements* Morning: An introduction to Python programming basics. The
 
 ## 练习1
 * 安装Anaconda并更新它以便拥有   所有包的最新版本。 我们将使用Python 3.4（而不是以前的Python 2.7版本）。
-* 通过键入以下命令启动Spyder并计算76：     x = 7 ** 6   打印（x）* 启动IPython Notebook并计算7的6次方
+* 通过键入以下命令启动Spyder并计算76：     
+  
+  x = 7 ** 6   打印（x）
+
+* 启动IPython Notebook并计算7的6次方
+
 -----------------Exercises 1* Install Anaconda and update it in order to have the  newest version of all packages. We shall use Python 3.4 (and not the previous Python 2.7 version).* Start Spyder and compute 76 by typing:    x = 7 ** 6  print (x)* Start IPython Notebook and compute 76
 ```python
 ```
 
 
-## 缩进（Indentation）* 在某些语句之后，会加一个缩进; 缩进减少，则表示当前块结束。* 例如
-x = 7 ** 6
+## 缩进（Indentation）
+* 在某些语句之后，会加一个缩进; 缩进减少，则表示当前块结束。
+* 例如
+    x = 7 ** 6
     print（x）#witt. fron't  inden-tation
-* 这段代码在Python中是错误的，虽然它在C ++，Matlab和许多其他代码或应用程序中是可以接受的。
+* 段代码在Python中是错误的，虽然它在C ++，Matlab和许多其他代码或应用程序中是可以接受的。
 --------------
 * An increase in indentation comes after certain statements; a decrease in indentation signifies the end of the current block.
 * For e.g
@@ -233,10 +240,11 @@ print(t.find('Python')) # find sth not in
 print(t[0:4]) # returu from index 0 to 3
 print(t.replace(' ','|')) # replace by '|'
 w = 'http://www.google.com'
-print(w.strip('http://')) #delete sth```
+print(w.strip('http://')) #delete sth
+```
     He is a string. who are you?    
+
     ['He', 'is', 'a', 'string.', 'Who', 'are', 'you?']    
-    3    
     11    
     -1    
     He i    
@@ -249,6 +257,7 @@ print(w.strip('http://')) #delete sth```
 
 --------------------------------
 * Python  has similar indexing rules with C++ , where its starting index is 0.* When you return values by index, the interval is actually [  , ) style, which means that the terminal index will not be included.
+
 ## 基本的数据结构（Basic data structures）
 |Name| Nation| Declaration e.g.|
 |----|-------|-----------------|
@@ -280,6 +289,7 @@ print(l)l.remove ('data')   #delete an elementprint(l)
 ## Python功能：参考对象（Python features: Refer for object）
 * 在Python中，如果要将值从一个对象传递给另一个对象，则=(等号)将按地址传递值。
 * 例如，
+```python
 x = [1, 2. 3, 4]
 y = x
 y[0] = 5
@@ -290,10 +300,13 @@ z  =  x.copy()
 z[0] = 5
 print (x)
 输出将会是[5,2,3,4],[1,2,3,4]
+```
 --------------------------------------------------
 
-* In Python if you want pass the value from one object to another, = will pass the value by address.* For example,
-  - x = [1, 2. 3, 4]  - y = x  - y[0] = 5  - print(x)
+* In Python if you want pass the value from one object to another, = will pass the value by address.
+* For example,
+  - x = [1, 2. 3, 4]  
+  - y = x  - y[0] = 5  - print(x)
   - x = [1, 2, 3, 4]  - z  =  x.copy()  - z[0] = 5  - print (x)
   - The output will be [5,2,3,4],[1,2,3,4]
 
@@ -324,21 +337,7 @@ Multidimensional list is not a matrix. Mathematical operators may lead to the re
 * Conidtional control elements include if else and elif.* For conditionsr we haveName     Notationlarger       >smaller        <equal      ==larger or equal      >=smaller or equal      <=not equal         !=* For multi-conditionsr we use and. or and not to connect
 
 
-## 示例和练习：条件语句 (Example & exercise: conditions)
-```python
-a = [24, 16, 54]
-b = []
-if  a[0]< a[1]  and a[0]< a[2] :
-    b.append(a[0])    
-    if  a[1]  <  a[2]:        
-         b.append(a[1])        
-         b.append(a[2])    
-    else:        
-         b.append(a[2])        
-         b.append(a[1]) 
-  # This piece of code is not done yet.
-  # Please  complete  it !!!```
-'''ol structures
+ol structures
 ller or equal |     <=|332|not equal        | !=|333334* 对于多个条件同时使用的情况，我们使用and, or 和not来做连接。335----------336* Conidtional control elements include if else and elif.* For conditionsr we haveName     Notationlarger       >smaller        <equal      ==larger or equal      >=smaller or equal      <=not equal         !=* For multi-conditionsr we use and. or and not to connect337338339## 示例和练习：条件语句 (Example & exercise: conditions)340```python341a = [24, 16, 54]342b = []343if  a[0]< a[1]  and a[0]< a[2] :344    b.append(a[0])    345    if  a[1]  <  a[2]:        346         b.append(a[1])        347         b.append(a[2])    348    else:        349         b.append(a[2])        350         b.append(a[1]) 351  # This piece of code is not done yet.352  # Please  complete  it !!!```353'''
 
 
@@ -354,20 +353,39 @@ ller or equal |     <=|332|not equal        | !=|333334* 对于多个
 |larger or equal |     >=|
 |sma
 
+
+## 示例和练习：条件语句 (Example & exercise: conditions)
+```python
+a = [24, 16, 54]
+b = []
+if  a[0]< a[1]  and a[0]< a[2] :
+    b.append(a[0])
+    if  a[1]  <  a[2]:
+        b.append(a[1])
+        b.append(a[2])
+    else:                 
+        b.append(a[2])
+        b.append(a[1])   
+# This piece of code is not done yet.  
+# Please  complete  it !!!```
+
 ## 循环语句 （Loops）
 * 循环语句有很多不同的样式代码，我们只提供两个常用的语句。
-1/                     for...in ... ：statement A
+```python
+     for...in ... ：statement A
      是循环中最常用的语句，通常与range（start,end,step）一起使用,start为起始值，end为结束值，step为步长。 例如，                
      range(0,8,1)  给出[0，1，2，3，4，5，6，7]
 
 2/                     
         while ...：statement A        
      将会执行A语句，直到满足while的条件。
--------* There are many different style code for loops, We just present two common used statements.
+```
+-------
+```python
+There are many different style code for loops, We just present two common used statements.
   -     for _ in ... : statement A
     is the most common used statement for loops, ait is combined with range(starC end, step). For e.g.,
   - range(0, 8, 1) gives [0, 1, 2, 3, 4, 5, 6, 7]
-* while ... : statement A* will implement A until it satisfy the condition of while.
-
-```python
+while ... : statement A* will implement A until it satisfy the condition of while.
 ```
+
