@@ -534,6 +534,8 @@ for i in range(300, 351):
     else :
         cantinue
 ```
+```python
+```
 ## 循环语句嵌套（Loop inside the loop）
 * 循环语句可以内嵌在另一个循环语句中(Loop can be written inside another loop)
 
@@ -543,4 +545,16 @@ for  i  in range (10):
      for j in range (5):
          print (j)
 ```
+```python
+```
+## 练习(Exercises)
+* Calculate the sum from 1 to 1000.
+* Calculate the sum of the even numbers from 1 to 1000
 
+```python
+```
+
+
+
+```python
+```
