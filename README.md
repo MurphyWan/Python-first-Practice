@@ -522,8 +522,8 @@ while  a < 100 :
 ## break和continue. 
 
 * 你可以在循环语句中使用关键字break，以跳出循环。(you can use the keyword break inside a loop to leave the loop..) 
-* 你也可以在循环语句中使用关键字continue，以暂停当前循环执行后面的语句。you can use the keyword continue inside a loop to stop pracessing the current iteration of the loop and immediately go on to the next round.
-* E.g.
+* 你也可以在循环语句中使用关键字continue，以暂停当前循环执行后面的语句。(you can use the keyword continue inside a loop to stop pracessing the current iteration of the loop and immediately go on to the next round.)
+* 举例 E.g.
 ```python
 # search the first
 # be divided by 17
@@ -550,6 +550,25 @@ for  i  in range (10):
 ## 练习(Exercises)
 * Calculate the sum from 1 to 1000.
 * Calculate the sum of the even numbers from 1 to 1000
+
+```python
+
+```
+## 功能 (Functions)
+
+
+```python
+
+```
+
+## 功能(方法or函数)的声明 (Function declaration)
+* 方法定义如下(Functions are defined as)
+```python
+def   TheNameOfFunction(paral, para2):
+      ...      
+      return Outcome
+```
+* Then the function will return the value of its outcome to wherever the function is called.
 
 ```python
 ```
