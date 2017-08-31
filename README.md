@@ -5,11 +5,12 @@
 # 《三天搞定Python基础概念之第一天》
 
 """
-#### 注释：鉴于Jiang老师提供的原始课件是英文版本，而我的计算机英文不太好，讲义看起来比较慢，为了提高学习效率，故我花了点时间将其翻译成中文版。该版本仅用于个人学习使用，绝不作商业用途。现将其分享出来。翻译水平有限，若有不当之处，还请大家指正。谢谢！
+#### 注释：
+本课件非常经典！只是鉴于Jiang老师提供的原始课件用英文写成，而我的计算机英文又不太好，讲义看起来比较慢，为了提高自学课件的效率，故我花了点时间将其翻译成中文版，以便将来快速复习该版本仅用于个人学习使用，绝不作商业用途。现将其分享出来。翻译水平有限，若有不当之处，还请大家指正。谢谢！
 """
 
 ## 作者：Yupeng Jiang
-* 伦敦大学学院 数学系（英国顶尖大学，2018 QS世界大学排名中位列世界第7名，英国第3名）
+* 伦敦大学学院 数学系（英国顶尖大学英国第3名，2018 QS世界大学排名中位列世界第7名
 * email:yupeng.jiang.13@ucl.ac.uk
 * 2016年6月5日
 * [课件来自] https://zhuanlan.zhihu.com/p/21332075
@@ -495,4 +496,28 @@ There are many different style code for loops, We just present two common used s
   - range(0, 8, 1) gives [0, 1, 2, 3, 4, 5, 6, 7]
 while ... : statement A* will implement A until it satisfy the condition of while.
 ```
+```python
+```
+
+## 举例：循环语言(Example: loops)     
+```python
+# for和range的例子 example  of  for  and  range  
+# 初始值默认值为default start of range is O     
+# 步长默认值为default step of range is 1     
+for i in range(2, 10, 3):         
+    print(i)         
+    l= i**2         
+    print(l)
+
+# white to sum   up 1 to 100
+a = 0
+sumup = O
+while  a < 100 :
+    a +- 1
+    sumup += a
+    print ( sumup)
+```
+```python
+```
+
 
