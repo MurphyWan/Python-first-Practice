@@ -262,17 +262,19 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 
 
 ## 例子（Example）
-* import  decimal  
+```python
+import  decimal  
 # import  the  libray  "decimal"    
 # display  2  decimal  precision
-* print (round (3*1415 ,   2))   #  result  3. 14
-* print (round (9 .995 ,   2))   #  result  9. 99
+print (round (3*1415 ,   2))   #  result  3. 14
+print (round (9 .995 ,   2))   #  result  9. 99
 
-* #call   function   "Decimal "  from lib "decimal"
-* print (decimal.Decimal (9.995))
-* The last "print" returns
+#call   function   "Decimal "  from lib "decimal"
+print (decimal.Decimal (9.995))
+The last "print" returns
 9.9949999999999992184029906638897955417633056640625,
-* which is exactly how 9.995 is stored in the hardware.
+which is exactly how 9.995 is stored in the hardware.
+```
 
 ## 练习3：字符串str的一些功能（Exercise3:Some functions for str）
 ```python
