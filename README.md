@@ -418,7 +418,11 @@ if  a[0]< a[1]  and a[0]< a[2] :
         b.append(a[2])
         b.append(a[1])   
 # This piece of code is not done yet.  
-# Please  complete  it !!!```
+# Please  complete  it !!!
+```
+
+
+
 
 ## 循环语句 （Loops）
 * 循环语句有很多不同的样式代码，我们只提供两个常用的语句。
@@ -431,7 +435,9 @@ if  a[0]< a[1]  and a[0]< a[2] :
         while ...：statement A        
      将会执行A语句，直到满足while的条件。
 ```
+
 -------
+
 ```python
 There are many different style code for loops, We just present two common used statements.
   -     for _ in ... : statement A
