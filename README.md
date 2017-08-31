@@ -572,6 +572,171 @@ def   TheNameOfFunction(paral, para2):
 
 ```python
 ```
+## Example: function of maximum of two variables
+```python
+def  MaxOfTwo (x1, x2):
+     if  x1 >= x2:
+          return x1       
+     else:
+          return x2
+
+a = l
+b = 2
+c = MaxOfTwo(a, b)
+print(c)
+```
+
+```python
+```
+
+## Default arguments
+* Functions in Python have no function overloading. It means that you cannot have two functions share the same name. But operator overloading is fine.
+* You can provide default values for a function's arguments,  for e.g.                
+```python
+   def MaxOfTwo(xl, x2 = 1): ...
+```
+* Please do put your default arguments at the end of your funaion arguments.
+
+```python
+```
+## Functions with two outputs
+* A funaion can also return two or more outputs. In that case you should write you code in the following:
+```python
+def  f (x1, x2,  x3, ...):
+     ......
+     return(y1,  y2,  y3, ...)
+
+a1,b1,c1 = f(...)
+``````python
+
+```
+# We can see an example here.
+# A function returns max and min.
+
+
+```python
+
+```
+
+## Reading/ writing files
+
+```python
+
+```
+## Built-in open() function
+* To open a file for writing use the built-in open() funciton. open() returns a file object, and is most commonly used with two arguments
+```python
+file_object = open(filename, mode)
+```
+* The mode can be
+  - 'r' when the file will only be read
+  - 'w' for only writing (an existing file with the same name will be erased)
+  - 'a' opens the file for appending; any data written to the file is automatically added to the end.
+  - 'r+' opens the file for both reading and writing.
+
+
+```python
+```
+## Creating new file
+```python
+   file = open('newfile.txt', 'w')
+   file.write('I am created for the course. \n')
+   file.write('How about you? ')
+   file.write('How is your exam?')
+   file.close()
+```
+
+
+```python
+```
+```
+## Reading a file
+```
+file = open('newfile.txt', 'r')
+#show whole efile
+print(file.read())
+#show first ten characterrs
+print(file.read(10))
+#view by line
+print(file.readline())
+#view all by line
+print(file.readlines())
+file.close()
+```
+
+
+
+
+
+```python
+
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
+
+
+
+```python
+```
 
 
 
