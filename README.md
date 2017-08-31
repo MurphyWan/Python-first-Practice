@@ -14,7 +14,8 @@
 * 2016年6月5日
 * [课件来自] https://zhuanlan.zhihu.com/p/21332075
 ## 翻译：Murphy Wan
-
+```python
+```
 
 ## 大纲（ Outline）
 * 第1天：Python和科学编程介绍。 Python中的基础知识：  - 数据类型  - 控制结构  - 功能  - I/O文件
@@ -26,7 +27,8 @@
 * Day 1: Introduction to Python and scientific programming. Basics in Python: data type, contro structures, fu nctions,  l/O file.
 * Day 2: Computation with Numpy, Scipy, Matplotlib and other modules. Solving some maths problems with  Python.
 * Day 3: Time series: statistics and real data analysis with Pandas. Stochastics and Monte Carlo.
-
+```python
+```
 
 ## _
 * Python的背景
@@ -44,7 +46,8 @@
 * Functions
 * Reading/writing files
 * Lab session
-
+```python
+```
 
 ## 为什么使用Python （ Why Python?）
 * Python是开源的，这意味着它是免费的。
@@ -64,7 +67,8 @@ Why Python?
   - Python is faster (on average) than some computing a pplications, like Matlab.
 * Python has a large community of programmers. It comes   with a large number of standard library and extended  packages.
 * Python is widely used in the industry (Google, NASA   hedge funds, banks, etc.).
-
+```python
+```
 
 ## 使用Python 2或3？
 * Python 3不能向后兼容Python 2，这意味着Python 2中的某些软件包或库无法在Python 3中使用。
@@ -81,7 +85,8 @@ Python 2 or 3?
 * Python 2.x is legacy and the present, Python 3.x is the future of the language. The 2.x branch will see no new major releases after 2.7 in mid-2010.
 * We will encounter some difFerences, but not much.
 * Checkhttps : //wiki.python.org/moin/Python2 or Python3 or other online resources for more information
-
+```python
+```
 
 ## 一些在线资源 （Some online resources）
 * http://openbookproject.net/thinkcs/python/english2e/ 通过前几章能获得基本思想。
@@ -97,7 +102,8 @@ Python 2 or 3?
 * https://www.kevinsheppard.com/images/0/09/Python_introduction.pdf A strong econometrics focus. Parts of this note are based on this document.
 * For some particular packages, such as Numpy and Pandas, the best way to learn is to use their official documentation and implement some examples by yourself.
 * Use Google and Stack Overflow.
-
+```python
+```
 
 ## Python环境 （Python environment）
 
@@ -113,7 +119,8 @@ Python 2 or 3?
 * Anaconda includes both the core Python interpreter and standard libraries.
 * https://www.continuum.io/downloads
 
-
+```python
+```
 
 ## Anaconda中包括的库（Libararies）
 * NumPy（http://numpy.scipy.org ）：该库用于处理（大）数组。
@@ -122,7 +129,8 @@ Python 2 or 3?
 * Pandas（http://pandas.sourceforge.net ）：该库有效并快速分析大数据集; 尤其针对金融时间序列。
 * IPython（http://wprw.ipython.org ）：shell、或基于浏览器：开发环境。
 * Spyder（http://pythonhosted.org/spyder/ ）：IDE交互式开发环境
-
+```python
+```
 
 ## 管理你的Anaconda
 * 在你的终端或cmd，输入
@@ -130,6 +138,8 @@ Python 2 or 3?
 * 您可以看到已安装的软件包列表
 * 更多的管理方法可以在这里找到：  http://conda.pydata.org/docs/using/pkgs.html
 
+```python
+```
 
 ## 你可以在本课程中学到什么？                                       
 * 本课程是为初学者设计的。 它不需要任何以前的任何编程语言的知识。
@@ -138,7 +148,8 @@ Python 2 or 3?
 * 使用Matplotlib库绘制图形。
 * 与Pandas分析实际数据和时间序列。
 * 学习如何使用它作为工具。
-
+```python
+```
 
 ## 今天的安排
 * 早上：Python编程基础介绍。 在上午的会议中，您将需要做一些练习。 只是一些热身水平的问题，他们会给你一个关于Python编程的想法。
@@ -150,6 +161,8 @@ Today's arrangements
 * Morning: An introduction to Python programming basics. There will be a few exercises you need to do during the morning session.  But just some warm-up level  questions, and they will give you an idea about Python programming.
 * Afternoon: We will finish the introduction part in half an hour. Then we will have three big problems to solve. They will be a good summary of today:s lecture. You will have one hour to work them out independently. I will then provide the analytics and the solutions in the last half an hour.
 
+```python
+```
 
 ## 练习1
 * 安装Anaconda并更新它以便拥有   所有包的最新版本。 我们将使用Python 3.4（而不是以前的Python 2.7版本）。
@@ -188,6 +201,8 @@ x = 7 ** 6  print (x)
 x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 * This piece of code will be error in Python, though it is acceptable in C++, Matlab and many other code or applications.
 
+```python
+```
 
 ## 编程中的一些好习惯（Some good habit in programming）
 * 在需要缩进和换行的地方使用这个功能；不要把你的脚本弄乱了。
@@ -202,8 +217,13 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 * Write comments. Help others and the the future yourself to understand what you write right now.
 * Do not start to learn more than one programming language at the same time.
 
+```python
+```
 
 ## 关于Python的基础知识（Basic knowlegde on Python）
+
+```python
+```
 
 ## 常用的数字数据类型（Common used numeric data types）
 |Name|       Notation|  Declaration e.g.
@@ -220,6 +240,8 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 
 * Remarks:  - In Python 2.7, an int operates with another int will lead to an int result. However, a float operates with an int will lead to a float.  - In Python 3.x, an int operates with another int will lead to a float.
 
+```python
+```
 
 ## 算数运算符（Arithmetic operators）
 
@@ -232,6 +254,8 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 |Modulus|%|x%a|
 |Exponent|**|a**x|
 
+```python
+```
 
 ## 练习2（Exercise 2）
 * 猜下面代码的结果。执行他们，看答案。
@@ -246,6 +270,8 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 - print (type (a/c))  # return the type of a/c 
 - print (type (b*d))  # return the type of b*d
 
+```python
+```
 
 ## 浮点数的精度（Precision of float）
 * 尝试在您的控制台中键入0.1 + 0.2。 你会发现这个值是  
@@ -259,7 +285,8 @@ x = 7 ** 6          print (x)  # witt. fron't  inden-tation
 
 * Try to type 0.1+0.2 in your console. You will find that the value is  - 0.30000000000000004            * This is in the very nature of binary floating-point. You can see the same kind of thing in all languages that support your hardware's floating-point arithmetic.* The display precision can be controled using "round()" function, but it also has above situation, which means round(9.995, 2) returns 9.99 rather than 10, since 9.995 is stored slightly smaller than 9.995.* Library decimal would give precise stored value, See the following example.
 
-
+```python
+```
 
 ## 例子（Example）
 ```python
@@ -274,6 +301,9 @@ print (decimal.Decimal (9.995))
 The last "print" returns
 9.9949999999999992184029906638897955417633056640625,
 which is exactly how 9.995 is stored in the hardware.
+```
+
+```python
 ```
 
 ## 练习3：字符串str的一些功能（Exercise3:Some functions for str）
@@ -299,6 +329,9 @@ print(w.strip('http://')) #delete sth
     www.google.com    
 ```
 
+```python
+```
+
 ## Python功能：索引（Python features: Indexing）
 * Python具有与C ++类似的索引规则，其起始索引为0。
 * 当通过索引返回值时，间隔实际上是[，]样式，这意味着不包括终端索引。
@@ -306,6 +339,9 @@ print(w.strip('http://')) #delete sth
 --------------------------------
 * Python  has similar indexing rules with C++ , where its starting index is 0.
 * When you return values by index, the interval is actually [  , ) style, which means that the terminal index will not be included.
+
+```python
+```
 
 ## 基本的数据结构（Basic data structures）
 |Name| Nation| Declaration e.g.|
@@ -327,6 +363,8 @@ print(w.strip('http://')) #delete sth
 * dict is a key-value store object.
 * set is an unordered collection object of unique objects.
 
+```python
+```
 
 ## 列表的一些有用功能（Some useful functions for list）
 ```python
@@ -343,6 +381,9 @@ print(l)l.remove ('data')   #delete an elementprint(l)
 [1, 2, 3.14, 'data', [4, 3], 'delta', 5, 6]    
 [1, 2, 3.14, 'beta', 'data', [4, 3], 'delta', 5, 6]    
 [1, 2, 3.14, 'beta', [4, 3], 'delta', 5, 6]    
+```
+
+```python
 ```
 
 ## Python功能：参考对象（Python features: Refer for object）
@@ -369,6 +410,8 @@ print (x)
   - x = [1, 2, 3, 4]  - z  =  x.copy()  - z[0] = 5  - print (x)
   - The output will be [5,2,3,4],[1,2,3,4]
 
+```python
+```
 
 ## 多维列表（Multidimensional  list）
 
@@ -392,6 +435,8 @@ print(a[0][3])
 But note:
 Multidimensional list is not a matrix. Mathematical operators may lead to the results that you don't want to see. For matrix computations, we will spend a lot of time on it tomorrow.
 
+```python
+```
 
 ## 条件语句（Conditions）
 * 条件控制元素包括if，else和elif。
@@ -406,6 +451,9 @@ Multidimensional list is not a matrix. Mathematical operators may lead to the re
 |sma
 
 * 对于多条件同时使用的情况，我么使用and, or 或者 not作为关键字来相互衔接
+
+```python
+```
 
 ## 示例和练习：条件语句 (Example & exercise: conditions)
 ```python
@@ -423,8 +471,8 @@ if  a[0]< a[1]  and a[0]< a[2] :
 # Please  complete  it !!!
 ```
 
-
-
+```python
+```
 
 ## 循环语句 （Loops）
 * 循环语句有很多不同的样式代码，我们只提供两个常用的语句。
