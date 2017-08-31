@@ -521,8 +521,8 @@ while  a < 100 :
 ```
 ## break和continue. 
 
-* You can use the keyword break inside a loop to leave the loop.. 
-* You can use the keyword continue inside a loop to stop pracessing the current iteration of the loop and immediately go on to the next round.
+* 你可以在循环语句中使用关键字break，以跳出循环。(you can use the keyword break inside a loop to leave the loop..) 
+* 你也可以在循环语句中使用关键字continue，以暂停当前循环执行后面的语句。you can use the keyword continue inside a loop to stop pracessing the current iteration of the loop and immediately go on to the next round.
 * E.g.
 ```python
 # search the first
@@ -534,5 +534,13 @@ for i in range(300, 351):
     else :
         cantinue
 ```
+## 循环语句嵌套（Loop inside the loop）
+* 循环语句可以内嵌在另一个循环语句中(Loop can be written inside another loop)
 
+```python
+for  i  in range (10):
+     print (i)     
+     for j in range (5):
+         print (j)
+```
 
