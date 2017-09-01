@@ -882,9 +882,11 @@ There are three different algorithms of sorting:
 
 * 代码功能
 
-  \[y = x^{x/3}\]
+  [https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif]
 
-* 使用派生词的定义，对其数字导数函数进行编码。* 找到数值解
+* 使用派生词的定义，对其数字导数函数进行编码。
+
+* 找到数值解
 
 Xx / 3 - 。2      
 
@@ -892,13 +894,13 @@ Xx / 3 - 。2     
 
 * 通过Newton-Raphson方法再次解决，该方法是“根搜索”的另一种数值方法。 它是由...给出的
 
-
+-----
 
 * Code the function
    y = Xx/3
 * Using the definition of derivatives, code its numerica derivatives function.* Find the numerical solution toXx/3 -. 2     by bisectian method.
 * Solve above again by Newton-Raphson, which is another numerical method for root-searching. It is given by
-
+https://www.codecogs.com/latex/eqneditor.php
 
 
 ```python
