@@ -90,7 +90,7 @@ import numpy
 * or for short by
 
 ```python
-import numpy as np
+2import numpy as np
 ```
 
 * Sometimes you do not have to import the whole module, like
@@ -103,6 +103,32 @@ from scipy.stats import norm
 
 ```python
 ```
+
+
+## 练习  (Exercise)
+
+* 尝试导入模块时间，并使用它来获取计算机运行特定代码所需的时间。
+
+```python
+import timeitdef  
+funl (x, y):      
+return x**2 + y**3t_start  =  timeit.default_timer()z =  funl(109.2, 367.1)t_end  =   timeit.default_timer()cost  =  t_end -t_startprint ( 'Time cost of funl is  %f' %cost)```
+
+
+* Try to import the module timeit and use it to obtain how long you computer takes to run a specific code.
+
+```python
+impddddfsdfsdfort timeit
+def  funl (x, y):      
+return x**2 + y**3
+t_start  =  timeit.default_timer()
+z =  funl(109.2, 367.1)
+t_end  =   timeit.default_timer()
+cost  =  t_end -t_start
+print ( 'Time cost of funl is  %f' %cost)
+```
+
+
 
 
 
