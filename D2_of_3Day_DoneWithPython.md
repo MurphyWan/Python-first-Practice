@@ -127,7 +127,7 @@ print ( 'Time cost of funl is  %f' %cost)
 * Try to import the module timeit and use it to obtain how long you computer takes to run a specific code.
 
 ```python
-impddddfsdfsdfort timeit
+import timeit
 def  funl (x, y):      
 return x**2 + y**3
 t_start  =  timeit.default_timer()
@@ -146,8 +146,29 @@ print ( 'Time cost of funl is  %f' %cost)
 ```python
 ```
 
+## 我们会遇到的模块
 
+* NumPy：多维数组的有效操作。 高效的数学函数。
+* Matplotlib：可视化：2D和（最近）3D图
+* SciPy：大型库实现各种数值算法，例如：            
+  - 线性和非线性方程的解
+  - 优化
+  - 数值整合
 
+* Sympy：符号计算（解析的 Analytical）
+* Pandas：统计与数据分析（明天）
+
+------------------------------以下为英文原文-------------------------------------
+
+## Modules we will encounter
+* NumPy: Efficient manipulation of multidimensional arrays. Efficient mathematical functions.
+* Matplotlib: Visualisations: 2D and (recently) 3D plots
+* SciPy: Large library implementing various numerical algorithms, e.g.:
+  - solution of linear and nonlinear equations           
+  - optimisation           
+  - numerical integration
+* Sympy: Symbolic computation (Analytical).
+* Pandas: Statistical and data analysis(tomorrow)
 
 
 ```python
