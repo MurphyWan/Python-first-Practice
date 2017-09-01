@@ -734,6 +734,29 @@ file.clase()
 ```python
 ```
 
+## with语句  (The with statement)
+
+* 很容易忘记关闭{close()}文件。 由于这个和其他原因，最好使用with语句:
+
+```python
+
+with open(“humpty.txt”) as f：
+
+```
+
+* 这样可以确保文件正确关闭，即使读取时发生错误。
+
+---------
+
+* It is easy to forget to close the file. For this and other reasons it is better to use the with statement:   
+
+```python
+with open("humpty.txt") as f:
+
+```
+
+* This ensures that the file will be properly closed, even if an error occurs during its reading.
+
 
 
 
