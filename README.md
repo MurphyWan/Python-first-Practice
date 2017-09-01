@@ -843,7 +843,18 @@ your function should return
 ```
 
 
+## 目标1提示： (Hint for Target 1:)     
+* 有三种不同的排序算法：
+  -  气泡排序：从最后开始，将最后两次的最大值传递给前一个索引。 你第一次遍历每一个数字，你通过最大的数字到一开始。 然后你在剩下的数字中重复一遍。
+  -  选择排序：首先搜索整个列表。 并将最小的数字传递到列表的末尾。 然后搜索整个列表排除最后一个数字。 再重复该步骤。
+  -  插入排序：从一开始，按顺序比较第一个数字和第二个数字，将第一个数字交换为最大数字。 然后重复它构成第二个直到结束。
 
+----- 
+
+There are three different algorithms of sorting:
+* Bubble sort: Starting from the end, pass the maximum of last two to the former index. The first time you traverse every number, you pass the largest number to the beginning. Then you repeat them in the rest numbers.
+* Selectian sort: Search the whole list first. And pass the smallest number to the end af the list. Then search the whole list exclude the last number. Repeat it.
+* Insert sort: Starting from the beginning, compare the first number and the rest sequentially to swap the first number to be the biggest. Then repeat it fram the second one until end
 
 
 ```python
