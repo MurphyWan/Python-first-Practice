@@ -903,12 +903,12 @@ There are three different algorithms of sorting:
 
 ## 目标2的提示  (Hint for Target 2:)
 
-* 衍生物可以近似于
-
+* 衍生物可以近似于 
+  
   - ![notebook-3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img04.gif)
   
-  - ![notebook-4](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img05.gif)
-  
+  - ![notebook-4](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img05.gif)
+  
   - ![notebook-5](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img06.gif)
 
 * 二分法实现如下：
