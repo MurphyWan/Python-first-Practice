@@ -704,10 +704,10 @@ file.close()
         我是为这个课程而诞生的
         你怎么样？你的考试如何
 
-------
+* ------以下是英文原文--------------------
 Output would be:
           I am created for the course   
-          How about you? How is your exam
+          How about you? How is your exam?
 
 
 ```
@@ -717,6 +717,16 @@ Output would be:
 ```python
 ```
 
+
+## 增加一个文件 (Adding in a file)
+
+```python
+file = open（'newfile.txt', 'a')
+file.write('\nI am back again. \n'）
+f ile.write('Do  you miss me?\n')
+file.clase()
+
+```
 
 
 ```python
