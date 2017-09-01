@@ -612,7 +612,10 @@ def  f (x1, x2,  x3, ...):
      return(y1,  y2,  y3, ...)
 
 a1,b1,c1 = f(...)
-``````python
+```
+
+
+```python
 
 ```
 # We can see an example here.
@@ -623,16 +626,18 @@ a1,b1,c1 = f(...)
 
 ```
 
-## Reading/ writing files
+## 读取/写入文件  (Reading/ writing files)
 
 ```python
 
 ```
-## Built-in open() function
+## 内建open()方法  [Built-in open() function]
 * To open a file for writing use the built-in open() funciton. open() returns a file object, and is most commonly used with two arguments
+
 ```python
 file_object = open(filename, mode)
 ```
+
 * The mode can be
   - 'r' when the file will only be read
   - 'w' for only writing (an existing file with the same name will be erased)
@@ -641,8 +646,10 @@ file_object = open(filename, mode)
 
 
 ```python
+
 ```
-## Creating new file
+
+## 创建一个文件  (Creating new file)
 ```python
    file = open('newfile.txt', 'w')
    file.write('I am created for the course. \n')
@@ -654,8 +661,11 @@ file_object = open(filename, mode)
 
 ```python
 ```
-```
-## Reading a file
+
+## 读取一个文件 (Reading a file)
+
+
+
 ```
 file = open('newfile.txt', 'r')
 #show whole efile
@@ -674,6 +684,31 @@ file.close()
 
 
 ```python
+
+```
+
+## 循环读取一个文件 (Looping over a file object)
+
+```python
+
+file = open('newfile.txt', 'r')
+for  line  in  file:
+     print (line)
+file.close()
+
+```
+
+
+```python
+输出将是
+        我是为这个课程而诞生的
+        你怎么样？你的考试如何
+
+------
+Output would be:
+          I am created for the course   
+          How about you? How is your exam
+
 
 ```
 
