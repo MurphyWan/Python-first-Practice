@@ -935,6 +935,14 @@ There are three different algorithms of sorting:
 ```
 
 
+## 目标3  (Target 3)
+
+* 在面试时 ，你的面试官者要求你编写一个可以给他第n个斐波纳契数字的函数，其中n由你的面试官决定。
+
+
+-----
+
+* In your interview. your interviewer ask yau to code a function that could give him the n-th Fibonacci number, where n is determined by your interviewer.
 
 
 
@@ -942,6 +950,28 @@ There are three different algorithms of sorting:
 
 
 ```
+
+
+## 目标3提示：  (Hint for Target 3:)
+
+* 斐波那契序列如下
+
+  - ![notebook-6](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img07.gif)
+  
+  - ![notebook-7](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img08.gif)
+
+
+* 其中一个方法是递归地使用一个函数。* 其中一个方法是利用append（）函数。
+
+----
+
+* Fibonacci sequence is given like
+  
+  ao = 1, a1 = 1,
+  
+  an = an-1 + an-2 for n> 2
+
+* One of the method is to recursively use a function.* One of the method is to take advantage from append() function.
 
 
 
