@@ -905,9 +905,11 @@ There are three different algorithms of sorting:
 
 * 衍生物可以近似于
 
-  - ![notebook-3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img04.gif), 
-  - ![notebook-4](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img05.gif),
-  - ![notebook-5](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img06.gif)
+  - ![notebook-3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img04.gif)
+  
+  - ![notebook-4](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img05.gif)
+  
+  - ![notebook-5](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img06.gif)
 
 * 二分法实现如下：
   - 给出间隔[a，b]，使得f（a）和f（b）具有不同的符号。
