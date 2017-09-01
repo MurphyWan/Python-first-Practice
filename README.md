@@ -881,8 +881,7 @@ There are three different algorithms of sorting:
 ## 目标2  (Target 2)
 
 * 代码功能
-
-  - ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
+  - ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
 
 * 使用派生词的定义，对其数字导数函数进行编码。
 
@@ -898,10 +897,15 @@ There are three different algorithms of sorting:
 -----
 
 * Code the function
-   y = Xx/3
-* Using the definition of derivatives, code its numerica derivatives function.* Find the numerical solution toXx/3 -. 2     by bisectian method.
+  - ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
+* Using the definition of derivatives, code its numerica derivatives function.
+* Find the numerical solution to
+  - ![notebook-1](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img02.gif)   
+    by bisectian method.
 * Solve above again by Newton-Raphson, which is another numerical method for root-searching. It is given by
-https://www.codecogs.com/latex/eqneditor.php
+  - ![notebook-2](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img03.png)
+
+* https://www.codecogs.com/latex/eqneditor.php
 
 
 ```python
