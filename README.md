@@ -905,7 +905,7 @@ There are three different algorithms of sorting:
 
 * 衍生物可以近似于
 
-  - ![notebook-3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img04.gif)
+  - ![notebook-3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img04.gif)
   
   - ![notebook-4](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img05.gif)
   
