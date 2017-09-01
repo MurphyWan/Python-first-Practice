@@ -956,12 +956,14 @@ There are three different algorithms of sorting:
 
 * 斐波那契序列如下
 
-  - ![notebook-6](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img07.gif)
+    - ![notebook-6](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img07.gif)
   
-  - ![notebook-7](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img08.gif)
+    - ![notebook-7](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img08.gif)
 
 
-* 其中一个方法是递归地使用一个函数。* 其中一个方法是利用append（）函数。
+* 其中一个方法是递归地使用一个函数。
+
+* 其中一个方法是利用append（）函数。
 
 ----
 
