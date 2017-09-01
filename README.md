@@ -869,7 +869,20 @@ There are three different algorithms of sorting:
 
 * 代码功能
 
-  https://latex.codecogs.com/gif.latex?y&space;=&space;x^{x/3}
+  t first. And pass the smallest number to the end af the list. Then search the whole list exclude the last number. Repeat it.* Insert sort: Starting from the beginning, compare the first number and the rest sequentially to swap the first number to be the biggest. Then repeat it fram the second one until end
+
+
+```python
+
+
+```
+
+
+## 目标2  (Target 2)
+
+* 代码功能
+
+  \[y = x^{x/3}\]
 
 * 使用派生词的定义，对其数字导数函数进行编码。* 找到数值解
 
