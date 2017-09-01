@@ -783,15 +783,11 @@ open('C:\Users\user\Documents\file.txt')
 
 * 请注意，反斜杠需要转义（写入两次'\\'）
 
+------
+
 * You can also specify file names using absolute paths.
-* Example(Mac/Linux):
-
-open ('/etc/gimp/2.O/gtkrc')
-
-* Example(Windows):
-
-open('C:\Users\user\Documents\file.txt')
-
+* Example(Mac/Linux):open ('/etc/gimp/2.O/gtkrc')
+* Example(Windows):open('C:\Users\user\Documents\file.txt')
 * Note that backslashes need to be escaped (written twice)
 
 
@@ -802,7 +798,7 @@ open('C:\Users\user\Documents\file.txt')
 ```
 
 
-
+## 实验部分  (Lab Session)
 
 
 ```python
@@ -810,8 +806,35 @@ open('C:\Users\user\Documents\file.txt')
 
 ```
 
+## 目标1  (Target 1)
+
+* 您的老板要求您编写一段代码，以便对于具有float或int类型元素的任何长度列表(list)，您的函数可以将它们按照从大到小排序。
+
+* 例如 如果你的老板给一个list
+
+```python               
+               [8, 2, 4, 6, 1, 9, 0, 3, 5, 7]
+
+```
+
+* 你的方法将返回
+
+```python
+               [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+```
 
 
+
+-----
+
+Your boss ask you to code a piece of code, such that for anylength list with floating or int type elements, your functioncan sort them from bigger to smaller.
+e.g. If your boss give a list
+```python                
+           [8, 2, 4, 6, 1, 9, 0, 3, 5, 7]
+```
+your function should return
+```python[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]```
 
 
 ```python
