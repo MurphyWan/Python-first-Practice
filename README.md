@@ -882,18 +882,18 @@ There are three different algorithms of sorting:
 
 * 代码功能
 
-  ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
+  - ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
 
 * 使用派生词的定义，对其数字导数函数进行编码。
 
 * 找到数值解
 
-  ![notebook-1](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img02.gif)   
+  - ![notebook-1](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img02.gif)   
 
 通过二等分法。
 
 * 通过Newton-Raphson方法再次解决，该方法是“根搜索”的另一种数值方法。 它是由...给出的
-  ![notebook-2](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img03.gif)
+  - ![notebook-2](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img03.png)
 
 -----
 
