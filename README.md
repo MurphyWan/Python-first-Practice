@@ -666,7 +666,8 @@ file_object = open(filename, mode)
 
 
 
-```
+```python
+
 file = open('newfile.txt', 'r')
 #show whole efile
 print(file.read())
@@ -677,6 +678,7 @@ print(file.readline())
 #view all by line
 print(file.readlines())
 file.close()
+
 ```
 
 
@@ -723,7 +725,7 @@ Output would be:
 ```python
 file = open（'newfile.txt', 'a')
 file.write('\nI am back again. \n'）
-f ile.write('Do  you miss me?\n')
+file.write('Do  you miss me?\n')
 file.clase()
 
 ```
