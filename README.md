@@ -761,59 +761,134 @@ with open("humpty.txt") as f:
 
 
 ```python
+
+
 ```
+
+
+## 文件路径  (File paths)
+
+* 也可以使用绝对路径指定文件名。
+* 示例（Mac / Linux）：
+
+```python
+open ('/etc/gimp/2.O/gtkrc')
+```
+
+* 示例（Windows）：
+
+```python
+open('C:\Users\user\Documents\file.txt')
+```
+
+* 请注意，反斜杠需要转义（写入两次'\\'）
+
+* You can also specify file names using absolute paths.
+* Example(Mac/Linux):
+
+open ('/etc/gimp/2.O/gtkrc')
+
+* Example(Windows):
+
+open('C:\Users\user\Documents\file.txt')
+
+* Note that backslashes need to be escaped (written twice)
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
 
 
 
 ```python
+
+
 ```
+
+
