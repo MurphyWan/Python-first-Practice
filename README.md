@@ -981,34 +981,7 @@ There are three different algorithms of sorting:
 
 ```python
 
+第一天的课程到此结束，辛苦了
 
 ```
-
-
-
-
-
-```python
-
-
-```
-
-
-
-
-
-```python
-
-
-```
-
-
-
-
-
-```python
-
-
-```
-
 
