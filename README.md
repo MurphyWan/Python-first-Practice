@@ -868,19 +868,6 @@ There are three different algorithms of sorting:
 ## 目标2  (Target 2)
 
 * 代码功能
-
-  t first. And pass the smallest number to the end af the list. Then search the whole list exclude the last number. Repeat it.* Insert sort: Starting from the beginning, compare the first number and the rest sequentially to swap the first number to be the biggest. Then repeat it fram the second one until end
-
-
-```python
-
-
-```
-
-
-## 目标2  (Target 2)
-
-* 代码功能
   - ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
 
 * 使用派生词的定义，对其数字导数函数进行编码。
