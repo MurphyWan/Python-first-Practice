@@ -378,13 +378,48 @@ print(c)
 
 
 
+## Filling arrays with identical elements
+
+```python
+In [1] : np.zeros(3)
+Out[l] : array([ O., 0., 0.])
+
+In [2] : np.zeros((2, 2), complex)
+Out[2] : array([[ 0.+0.j, 0.+0.j],                
+                [ 0.+O.j, 0.+0.j]])
+
+In [3] : np.ones((2, 3))
+Out[3] : array([[ 1., 1., 1.],
+                [ 1., 1., 1.]])
+```
+
+
+
 
 
 ```python
 ```
 
 
+## 使用随机数字填充数组 (Filling arrays with random numbers)
 
+* rand: 0和1之间均匀分布的随机数  (random numbers uniformly distributed between 0 and 1)
+
+```python   
+   In [1] : np.random.rand(2, 4)   
+   Out[1] : array([[ 0.373767 , 0.24377115, 0.1050342 , 0.16582644] , 
+                   [ 0.31149806, 0.02596055, 0.42367316, 0.67975249l])
+```
+
+* randn: 均值为0，标准差为1的标准（高斯）正态分布  {standard normal (Gaussian) distribution with mean 0 and variance 1} 
+
+```python
+  In [2]: np.random.randn(2, 4)  
+  Out[2]: array([[ O.87747152, 0.39977447, -0.83964985, -1.05129899], 
+                 [-1.07933484, 0.49448873,   -1.32648606, -094193424]])
+```
+
+* 其他标准分布也可以使用 (Other standard distributions are also available.)
 
 
 
