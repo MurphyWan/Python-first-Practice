@@ -263,9 +263,9 @@ Out [3] :  array([ 2.+O.j,  3.+O.j,  6.+O.j,  7.+1.j])
 ```python          
 in[1]：np.arange（5）
 Out [l]：array（[0，1，2，3，4]）
-```    
+```
 
-  range(start, stop, step)的所有三个参数即起始值，结束值，步长都是可以用的 另外还有一个数据的dtype参数 
+range(start, stop, step)的所有三个参数即起始值，结束值，步长都是可以用的 另外还有一个数据的dtype参数 
   
   
 ```python
