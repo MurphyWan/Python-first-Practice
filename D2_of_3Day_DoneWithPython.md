@@ -378,17 +378,17 @@ print(c)
 
 
 
-## Filling arrays with identical elements
+## 使用完全相同的元素填充数组 (Filling arrays with identical elements)
 
 ```python
-In [1] : np.zeros(3)
+In [1] : np.zeros(3)              # zero(),全0填充数组
 Out[l] : array([ O., 0., 0.])
 
 In [2] : np.zeros((2, 2), complex)
 Out[2] : array([[ 0.+0.j, 0.+0.j],                
                 [ 0.+O.j, 0.+0.j]])
 
-In [3] : np.ones((2, 3))
+In [3] : np.ones((2, 3))          # ones(),全1填充数组
 Out[3] : array([[ 1., 1., 1.],
                 [ 1., 1., 1.]])
 ```
