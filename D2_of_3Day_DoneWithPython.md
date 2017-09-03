@@ -267,17 +267,17 @@ Out [l]：array（[0，1，2，3，4]）
 
   - range(start, stop, step)的所有三个参数即起始值，结束值，步长都是可以用的 另外还有一个数据的dtype参数 
   
-  ```python
+```python
   in[2]：np.arange（10，100，20，dtype = float）
   Out [2]：array（[10.，30.，50.，70.，90.]）
-  ```
+```
   
  * linspace（start，stop，num）返回数字间隔均匀的样本，按区间[start，stop]计算：
   
-  ```python
+```python
   in[3]：np.linspace（0.，2.5，5）         
   Out [3]：array（[0.，0.625，1.25，1.875，2.5]）
-  ```   
+```   
   
   * 注释：即从0开始，到2.5结束，然后分成5等份
   
