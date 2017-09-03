@@ -318,6 +318,19 @@ Out [5] : 6
 
 
 
+## 形状变化  (Shape changing)
+
+```python
+import numpy as np
+
+a = np .arange(0, 20, 1) ＃1维
+b = a.reshape((4, 5))   ＃4行5列
+c = a.reshape((20, 1))  ＃2维
+d = a.reshape((-1, 4))  ＃-1：自动确定
+＃a.shape =(4, 5) ＃改变a的形状
+```
+
+
 
 
 ```python
