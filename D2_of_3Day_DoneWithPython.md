@@ -292,6 +292,23 @@ range(start, stop, step)的所有三个参数即起始值，结束值，步长�
 ```
 
 
+## 多维数组矩阵  (Matrix by multidimensional array)
+
+```python
+In [1] : a = np.array([[l, 2, 3l,  [4, 5, 6l])
+                          ^ Row 1
+In  [2] : a
+Out [2] : array([[l, 2,  3] ,   [4,  5,  6]])
+
+In  [3] : a.shape  #<- Number of rows, columns etc.
+Out [3] : (2,3)
+
+In  [4] : a.ndim   #<- Number of dimensions
+Out [4] : 2
+
+In  [5] : a,size   #<- Total number of elements
+Out [5] : 6
+```
 
 
 
