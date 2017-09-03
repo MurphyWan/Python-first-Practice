@@ -296,17 +296,17 @@ range(start, stop, step)的所有三个参数即起始值，结束值，步长�
 
 ```python
 In [1] : a = np.array([[l, 2, 3l,  [4, 5, 6l])
-                          ^ Row 1
+                          ^ 第一行 (Row 1)
 In  [2] : a
 Out [2] : array([[l, 2,  3] ,   [4,  5,  6]])
 
-In  [3] : a.shape  #<- Number of rows, columns etc.
+In  [3] : a.shape  #<- 行、列数等 (Number of rows, columns etc.)
 Out [3] : (2,3)
 
-In  [4] : a.ndim   #<- Number of dimensions
+In  [4] : a.ndim   #<- 维度数  (Number of dimensions)
 Out [4] : 2
 
-In  [5] : a,size   #<- Total number of elements
+In  [5] : a,size   #<- 元素数量 (Total number of elements)
 Out [5] : 6
 ```
 
