@@ -186,8 +186,7 @@ print ( 'Time cost of funl is  %f' %cost)
 
 ## ndarray类型
 * NumPy提供了一种新的数据类型：ndarray（n维数组）。
-
-  - 与元组和列表不同，数组只能存储相同类型的对象（例如只有floats或只有ints）  
+  - 与元组和列表不同，数组只能存储相同类型的对象（例如只有floats或只有ints）  
   - 这使得数组上的操作比列表快得多; 此外，阵列占用的内存少于列表。  
   - 数组为列表索引机制提供强大的扩展。
 
@@ -213,6 +212,21 @@ print ( 'Time cost of funl is  %f' %cost)
 
 
 
+## Create the ndarray
+* We import Numpy (at the beginning of the script or in the terminal): 
+```python
+import numpy as np
+```
+* Then we create numpy arrays:   
+
+```python
+In [1] : np.array([2, 3, 6, 7])   
+Out[l] : array([2, 3, 6, 7])   
+In [2] : np.array([2, 3, 6, 7.])   
+Out [2] :  array([ 2.,  3.,  6., 7.])  <- Hamogenaous   
+In  [3] :  np.array( [2,  3,  6,  7+ij])   
+Out [3] :  array([ 2.+O.j,  3.+O.j,  6.+O.j,  7.+1.j])
+```
 
 
 ```python
