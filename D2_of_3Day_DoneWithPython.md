@@ -212,7 +212,29 @@ print ( 'Time cost of funl is  %f' %cost)
 
 
 
-## Create the ndarray
+## 创建ndarray
+
+* 我们导入Numpy（在脚本的开头或终端）：
+
+```python
+import numpy as np
+```
+
+* 然后我们创建numpy数组：
+
+```python
+In [1] : np.array([2, 3, 6, 7])   
+Out[l] : array([2, 3, 6, 7])   
+In [2] : np.array([2, 3, 6, 7.])   
+Out [2] :  array([ 2.,  3.,  6., 7.])  <- Hamogenaous   
+In  [3] :  np.array( [2,  3,  6,  7+ij])   
+Out [3] :  array([ 2.+O.j,  3.+O.j,  6.+O.j,  7.+1.j])
+```
+
+
+------------------------------以下为英文原文-------------------------------------
+
+Create the ndarray
 * We import Numpy (at the beginning of the script or in the terminal): 
 ```python
 import numpy as np
