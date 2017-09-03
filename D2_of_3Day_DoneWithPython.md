@@ -286,43 +286,6 @@ range(start, stop, step)的所有三个参数即起始值，结束值，步长�
 
 
 
-(以下为英文原文)
-
-
-##  Creating evenly spaced arrays
-
-* arange:
-
-```python
-         In [1] : np.arange(5)
-         Out[l] : array([0, 1, 2, 3, 4])
-```
-
-All three parameters of range (start, stop, step) are supported, plus an additional dtype argument for data type:
-
-
-```python
-        In  [2] : np.arange(l0, 100, 20. dtype=float)        
-        Out [2] : array([ 10.,  30.,  50.,  70., 90.])
-
-```
-
-* linspace(start, stop, num) Returns num evenly spaced samples, calculated over the interval [start, stop]:
-
-
-
-```python
-      In [3] : np.linspace(0., 2.5, 5)        
-      Out[ 3] : array([ 0. , 0.625, 1.25 , 1.875, 2.5])
-```
-
-
-- Very useful in generation plots.
-
-
-
-
-
 ```python
 ```
 
