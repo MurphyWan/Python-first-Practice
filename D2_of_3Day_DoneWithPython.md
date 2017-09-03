@@ -290,13 +290,15 @@ Out [l]：array（[0，1，2，3，4]）
 
 
 ##  Creating evenly spaced arrays
+
 * arange:
+
 ```python
          In [1] : np.arange(5)
          Out[l] : array([0, 1, 2, 3, 4])
 ```
 
-  -  All three parameters of range (start, stop, step) are supported, plus an additional dtype argument for data type:
+  All three parameters of range (start, stop, step) are supported, plus an additional dtype argument for data type:
 
 ```python
         In  [2] : np.arange(l0, 100, 20. dtype=float)        
