@@ -476,7 +476,7 @@ Out[81]：array（[1,2,3]）      # <-- stop为-1表示倒数第二个数
 
 ```python
 In [77]：a = np.array（[0,1,2,3,4]）
-Out[77]：array（[0，1，2，3，4l）
+Out[77]：array（[0，1，2，3，4])
 ```
 * 要获取，例如每个其他元素，您可以在第二个冒号后面指定第三个数字（步骤(step)）：  
 ```python
@@ -502,6 +502,26 @@ Out[81]：array（[4，3，2，1，0]）
 
 ```python
 ```
+
+
+
+## 数组索引(2D)  （Array indexing (2D)）
+
+* 对于多维数组，索引是整数元组：(For multidimensional arrays, indices are tuples of integers:)  
+
+```python
+In [93] :  a = np.arange(12) ; a.shape =  (3,  4);  a
+Out[93] :  array([[0,  1,  2,  3],
+                  [4,  5,  6,  7],
+                  [8, 9,  10, 11]])
+
+In [94] : a[1,2]
+Out[94] : 6
+
+In [95] : a[1,-1]
+Out[95] : 7
+```
+
 
 
 
