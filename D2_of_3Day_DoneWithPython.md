@@ -592,7 +592,7 @@ array([[20, 22, 24]      
 
 ```
 
-
+![note-book0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/mofang.jpg)
 
 
 
