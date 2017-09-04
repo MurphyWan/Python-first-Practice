@@ -535,6 +535,36 @@ Out[95] : 7
 
 
 
+## 数组切片（2D）：单行和列 (Array slicing (2D): single rows and columns)
+
+* 索引的工作与列表完全相同：（Indexing works exactly like for lists:）
+
+```python
+In [96] : a = np.arange(12); a.shape = (3, 4); a   
+Out[96] : array([[0, 1, 2, 3],
+                 [4, 5, 6, 7],
+                 [8, 9,10,11]])
+
+In [97] : a[:,1]
+Out[97] : array([1,5,9])
+
+In [98] : a[2,:]
+Out[98] : array([ 8, 9, 10, 11])
+
+In [99] : a[1][2]
+Out[99] : 6
+```
+
+* 不必明确提供尾随的冒号：（Trailing colons need not be given explicitly:）
+
+```python
+In [100] : a[2]
+Out[100] : array([8,9,10,11]) 
+```
+
+
+
+
 
 ```python
 ```
