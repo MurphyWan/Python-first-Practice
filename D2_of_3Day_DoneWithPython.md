@@ -766,7 +766,7 @@ Out[4]: array([ 70, 100])
 
 
 
-## Linearalgebra            I         
+## 线性代数  (Linearalgebra)         
 
 * 线性方程的解  (Solution of linear equations:)
 
@@ -795,9 +795,9 @@ print(det)          
 
 
 
-## Numerical integration
+## 数值整合  (Numerical integration)
 
-* integrate.quad is a function for adaptive numerical quadrature of one-dimensional integrals.
+* integration.quad是一维积分的自适应数值积分的函数。 (integrate.quad is a function for adaptive numerical quadrature of one-dimensional integrals.)
 
 ```python
 
@@ -822,7 +822,24 @@ print(error)
 
 
 
+## Statistics in Scipy
 
+* scipy has a sub-library for statistical functions, you can import it by
+
+```python
+from scipy import stats
+```
+
+* Then you are able to use some useful statistical function. For example, the cummulative density function of a standard normal distribution is given like
+()
+
+* With this package, we can directly use it like
+
+```python
+from scipy import statsy = stats.norm.cdf(1.2)
+```
+
+![Statistics-in-Scipy](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img010_statistics_in_scipy.jpg)
 
 
 
