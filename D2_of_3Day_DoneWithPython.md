@@ -767,6 +767,10 @@ In [2] : np.savetxt("myfile.txt", a)
 
 * 示例文本文件data.txt： (Example text file data.txt:)
 
+|Year|  Min temp.| Hax temp.|       
+|:------|-----------:|-----------:|
+|1990|     -1.5 |       25.3|
+|1991|     -3.2|        21.2|       
 
       
 * Code:
@@ -781,13 +785,6 @@ In [2] : np.savetxt("myfile.txt", a)
 ```
 
 
-|Year|  Min temp.| Hax temp.|       
-
-|:----|----------:|----------:|
-
-|1990|     -1.5 |       25.3|
-
-|1991|     -3.2|        21.2|       
 
 
 
