@@ -766,11 +766,11 @@ In [2] : np.savetxt("myfile.txt", a)
 * 默认情况下，loadtxt()假定列是用空格分隔的。 您可以通过修改可选的参数进行更改。 以散列（＃）开头的行将被忽略。 (By default, loadtxt() assumes that columns are separated with whitespace. You can change this by modifying optional parameters. Lines starting with hashes (#) are ignored.)
 
 * 示例文本文件data.txt： (Example text file data.txt:)
-      
-      |# Year|  Min temp.| Hax temp.|  
-      |------|----------|-----------| 
-       |1990|     -1.5 |       25.3|        
-       |1991|     -3.2|        21.2|
+
+|# Year|  Min temp.| Hax temp.|  
+|------|----------|-----------| 
+|1990|     -1.5 |       25.3|       
+|1991|     -3.2|        21.2|
        
        
 * Code:
@@ -1355,7 +1355,7 @@ f = sy.sin(x) + sy.exp(x)
 print(sy.integrate(f, (x,  a,  b)))
 print(sy.integrate(f, (x,  1,  2)))
 print(sy.integrate(f, (x,  1.0,2.0)))
-#  multi variables
+# 多变量 multi variables
 g = sy.exp(x) + x * sy.sin(y)
 print(sy.integrate(g, (y,a,b)))
 ```
