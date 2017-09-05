@@ -633,37 +633,25 @@ Out[34] : array([0,1,100,3,4])
 
 
 
+## 副本和视图 (Copies and views)
+
+* 为避免修改原始数组，可以制作一个片段的副本 (To avoid modifying the original array, one can make a copy of a slice:)
 
 ```python
+In [30] : a = np.arange(5); a
+Out[30] : array([0, 1, 2, 3, 4])
+
+In [31] : b = a[2:].copy(); b
+Out[31] : array([2, 3, 4])
+
+In [32] : b[0] = 100
+In [33] : b
+Out[33] : array([1OO, 3, 4])
+
+In [34] : a 
+Out[34] : array([ 0,  1.  2,  3,  4])
+
 ```
-
-
-
-
-
-
-```python
-```
-
-
-
-
-
-
-
-```python
-```
-
-
-
-
-
-
-
-```python
-```
-
-
 
 
 
@@ -673,7 +661,130 @@ Out[34] : array([0,1,100,3,4])
 
 
 
+## 矩阵乘法  (Matrix multiplication)
 
+* 运算符 \* 表示元素乘法，而不是矩阵乘法：(The * operator represents  elementwise multiplication , not matrix multiplication:)    
+
+```python
+
+In [1]: A = np.array([[1, 2],[3, 4]])
+In [2]: A
+Out[2]: array([[1, 2],
+               [3, 4]])
+
+In [3]: A * A
+Out[3]: array([[1, 4],
+               [9, 16]])            
+```
+
+* 使用dot（）函数进行矩阵乘法：(Matrix multiplication is done with the dot() function:)
+
+```python
+
+In [4]: np.dot(A, A)
+Out[4]: array([[ 7, 10],    
+               [15, 22]])  
+```
+
+
+
+
+```python
+```
+
+
+## 矩阵乘法
+
+* dot（）方法也适用于矩阵向量(matrix-vector)乘法：
+
+```python
+
+In [1]: A
+Out[1]: array([[1, 2],[3, 4]])
+
+In [2]: x = np.array([10, 20])
+In [3]: np.dot(A, x)
+Out[3]: array([ 50, 110])
+
+In [4]: np.dot(x, A)
+Out[4]: array([ 70, 100])
+
+```
+
+
+
+```python
+```
+
+
+## Numpy包含更高效率的功能
+
+* Numpy包含许多常用的数学函数，例如：
+  
+  - np.log
+  - np.maximum
+  - np.sin
+  - np.exp
+  - np.abs
+
+* 在大多数情况下，Numpy函数比Math包中的类似函数更有效，特别是对于大规模数据。
+
+
+
+
+```python
+```
+
+
+## Scipy (库)
+
+
+
+```python
+```
+
+
+
+## SciPy的结构
+
+* scipy.integrate  - >积分和普通微分方程
+* scipy.linalg  - >线性代数
+* scipy.ndimage  - >图像处理
+* scipy.optimize  - >优化和根查找(root finding)
+* scipy.special  - >特殊功能
+* scipy.stats  - >统计功能
+* ...
+
+要加载一个特定的模块，请这样使用, 例如 :
+
+* from scipy import linalg
+
+
+
+```python
+```
+
+
+
+## Linearalgebra            I         
+
+* 线性方程的解  (Solution of linear equations:)
+
+```python
+
+import numpy as np
+from scipy import linalg    
+
+A = np.random.randn(5, 5)
+b = np.random.randn(5)
+x = linalg.solve(A, b)     # A x = b#print(x)    
+eigen = linalg.eig(A)     # eigens#print(eigen)    
+det = linalg.det(A)     # determinant    
+print(det)            
+
+```
+
+* linalg的其他有用的方法：eig()（特征值和特征向量），det()（行列式）。{Other useful functions from linalg: eig() (eigenvalues and eigenvectors), det()  (determinant). } 
 
 
 
@@ -684,15 +795,25 @@ Out[34] : array([0,1,100,3,4])
 
 
 
+## Numerical integration
 
+* integrate.quad is a function for adaptive numerical quadrature of one-dimensional integrals.
 
 ```python
+
+import numpy as np
+from scipy import integrate
+
+def fun(x):
+    return np.log(x)
+
+value, error = integrate.quad(fun,0,1)
+print(value)
+print(error)
+
 ```
 
-
-
-
-
+![Numerical-integration](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img009_Numerical-integration.jpg)
 
 
 ```python
