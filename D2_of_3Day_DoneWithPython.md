@@ -1239,7 +1239,7 @@ print(g)
 ```
 
 
-## Use of symbol 1: Solve equations
+## 符号的使用1：求解方程  (Use of symbol 1: Solve equations)
 
 ```python
 
@@ -1247,13 +1247,17 @@ import sympy as sy
 
 x  = sy.Symbol ('x')
 y  = sy.Symbol('y')
-# give [-1, 1]
+
+# 给定[-1,1]  (give [-1, 1])
 print(sy.solve (x**2 - 1))
-# no guarantee for solution
+
+# 不能证解决 (no guarantee for solution)
 print(sy.solve(x**3  +  0.5*x**2 - 1))
-# exepress x in terms of y
+
+# 用x的表达式表示y     (exepress x in terms of y)
 print (sy.solve(x**3  +  y**2))
-# error:  no  algorithm  can  be  found
+
+# 错误：找不到算法 (error:  no  algorithm  can  be  found)
 print(sy.solve(x**x + 2*x - 1))
 ```
 
@@ -1265,14 +1269,16 @@ print(sy.solve(x**x + 2*x - 1))
 
 
 
-##  Use of symbol 2: Integration   
+## 符号的使用2：集成  (Use of symbol 2: Integration)   
 
 ```python
 import sympy as sy
+
 x = sy.Symbol('x')
 y = sy.Symbol( 'y')
 b = sy.symbols ( 'a b')
-#single  variable
+
+# 单变量 single  variable
 f = sy.sin(x) + sy.exp(x)
 print(sy.integrate(f, (x,  a,  b)))
 print(sy.integrate(f, (x,  1,  2)))
@@ -1288,16 +1294,16 @@ print(sy.integrate(g, (y,a,b)))
 ```
 
 
-## Use of symbol 2: Differentiation
+## 符号的使用3：分化  (Use of symbol 3: Differentiation)
 
 ```python
 import sympy as sy
 x =  sy.Symbol( 'x')
 y =  sy.Symbol( 'y')
-#sing1e variable
+# 单变量 (single variable)
 f = sy.cos(x) + x**x
 print(sy . diff (f ,  x))
-#  multi variables
+#  多变量  (multi variables)
 g = sy.cos(y) * x + sy.log(y)
 print(sy.diff (g,  y))
 ```
