@@ -14,7 +14,7 @@
 ```
 ## 作者：Yupeng Jiang
 * 伦敦大学学院 数学系  (英国顶尖大学，2018 QS世界大学排名中位列世界第7名，英国第3名)
-* email:yupeng.jiang.13@ucl.ac.uk
+* email:yupeng.jiang.13atcl.ac.uk
 * 2016年6月5日
 * [课件来自] https://zhuanlan.zhihu.com/p/21332075
 ## 翻译：Murphy Wan
@@ -949,9 +949,280 @@ plt.plot(x, x-1, ’k-’) # continue plot
 plt.plot(x, np.zeros_like(x), ’k-’)
 
 ```
+* 注意：您的x轴在plt.plot函数中应与y轴的尺寸相同。 (Note: Your x-axis should be the same dimension to y-axis in plt.plot function.)
+
+![the simplest plot](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img012_the_simplest_plot.jpg)
+
+
+
+
+
+```python
+
+```
+
+
+
+## 多个制图图例标签和标题  (Multiple plotting, legends, labels and title)
+
+```python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 201)
+plt.figure(figsize = (4, 4))
+for n in range(2, 5):
+    y = x ** (1 / n)
+    plt.plot(x, y, label=’x^(1/’ \
+            + str(n) + ’)’)
+plt.legend(loc = ’best’)
+plt.xlabel(’X axis’)
+plt.ylabel(’Y axis’)
+plt.xlim(-2, 10)
+plt.title(’Multi-plot e.g. ’, fontsize = 18)
+
+```
+
+![multiple-plotting](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img013_multiple_plotting.jpg)
+
+* Forinformations:See     
+
+```python
+
+help(plt.plot)  
+
+```
 
 
 ```python
 ```
 
 
+
+## 绘制子图 (Subplots，即在           )
+
+```python
+
+import numpy as np’
+import matplotlib.pyplot as plt
+
+def pffcall(S, K):    
+    return np.maximum(S - K, 0.0)
+def pffput(S, K):
+    return np.maximum(K - S, 0.0)    
+
+S = np.linspace(50, 151, 100)
+fig = plt.figure(figsize=(12, 6))  
+
+sub1 = fig.add_subplot(121)     # col, row, num    
+sub1.set_title('Call', fontsize = 18)
+plt.plot(S, pffcall(S, 100), 'r-', lw = 4)
+plt.plot(S, np.zeros_like(S), 'black',lw = 1)
+sub1.grid(True)
+sub1.set_xlim([60, 120])
+sub1.set_ylim([-10, 40])    
+
+sub2 = fig.add_subplot(122)
+sub2.set_title('Put', fontsize = 18)
+plt.plot(S, pffput(S, 100), 'r-', lw = 4)
+plt.plot(S, np.zeros_like(S), 'black',lw = 1)
+sub2.grid(True)
+sub2.set_xlim([60, 120])
+sub2.set_ylim([-10, 40])  
+
+```
+
+![multiple_plottion](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img014_multiple_plotting.jpg)
+
+* Figure: 一个子图的例子
+  (注释：这里，可以把Figure，即fig理解为一张大画布，你把它分成了两个子区域(sub1和sub2)，然后在每个子区域各画了一幅图。)
+
+
+
+```python
+```
+
+
+
+##  在绘制的图上添加文本和注释 (Adding texts to plots)
+
+```python
+
+import numpy as np
+from scipy.stats import norm
+import matplotlib.pyplot as plt
+
+def call(S, K=100, T=0.5, vol=0.6, r=0.05):
+    d1 = (np.log(S/K) + (r + 0.5 * vol**2) \
+          *T) / np.sqrt(T) / vol
+    d2 = (np.log(S/K) + (r - 0.5 * vol**2) \
+          *T) / np.sqrt(T) / vol
+    return S * norm.cdf(d1) - K * \
+    np.exp(-r * T) * norm.cdf(d2)
+
+def delta(S, K=100, T=0.5, vol=0.6, r=0.05):
+    d1 = (np.log(S/K) + (r + 0.5 * vol**2)\
+          *T) / np.sqrt(T) / vol
+    return norm.cdf(d1)
+
+```
+
+
+## (Code continues:)
+
+```python
+
+S = np.linspace(40, 161, 100)
+fig = plt.figure(figsize=(7, 6))
+ax = fig.add_subplot(111)
+plt.plot(S,(call(S)-call(100)),’r’,lw=1)
+plt.plot(100, 0, ’ro’, lw=1)
+plt.plot(S,np.zeros_like(S), ’black’, lw = 1)
+plt.plot(S,call(S)-delta(100)*S- \
+    (call(100)-delta(100)*100), ’y’, lw = 1)
+
+```
+
+
+## (Code continues:)
+
+
+```python
+
+ax.annotate(’$\Delta$ hedge’, xy=(100, 0), \
+            xytext=(110, -10),arrowprops= \
+            dict(headwidth =3,width = 0.5, \
+            facecolor=’black’, shrink=0.05))
+ax.annotate(’Original call’, xy= \
+            (120,call(120)-call(100)),xytext\
+            =(130,call(120)-call(100)),\
+            arrowprops=dict(headwidth =10,\
+            width = 3, facecolor=’cyan’, \
+            shrink=0.05))
+plt.grid(True)
+plt.xlim(40, 160)
+plt.xlabel(’Stock price’, fontsize = 18)
+plt.ylabel(’Profits’, fontsize = 18)
+
+```
+
+![annotation](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img015_annotation.jpg)
+
+
+
+
+```python
+```
+
+## 3D plot of a function with 2 variables
+
+```python
+
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
+
+x, y = np.mgrid[-5:5:100j, -5:5:100j]
+z = x**2 + y**2
+fig = plt.figure(figsize=(8, 6))
+ax = plt.axes(projection='3d')
+surf = ax.plot_surface(x, y, z, rstride=1,\
+                       cmap=cm.coolwarm, cstride=1, \
+                       linewidth=0)
+fig.colorbar(surf, shrink=0.5, aspect=5)
+plt.title('3D plot of $z = x^2 + y^2$')
+
+```
+
+![3D-plot](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img016_3D_plot.jpg)
+
+
+
+```python
+```
+
+
+## 实验3:atplotlib    (Lab 3: Matplotlib)
+
+* 用蓝线绘制以下函数 (Plot the following function with blue line)
+
+  ![1](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img017_1.jpg)
+
+  - 然后用红点标记坐标（1,2） (Then mark the coordinate (1, 2) with a red point.)
+
+* 使用np.linspace()使t ∈ [0，2π]。 然后给  (Use np.linspace0 to make t ∈ [0，2π]. Then give)
+  
+  ![2](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img017_2.jpg)
+  
+  - 针对X绘Y。 在这个情节中添加一个称为“Heart”的标题。 (Plot y against x. Add a title to this plot which is called "Heart" .)
+
+* 针对x∈[-10,10], y∈[-10,10], 绘制3D函数  (Plot the 3D function for x∈[-10,10], y∈[-10,10])
+    
+   ![3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img017_3.jpg)
+
+
+
+
+```python
+```
+
+
+
+
+
+
+
+
+```python
+```
+
+
+
+
+
+
+
+```python
+```
+
+
+
+
+
+
+
+
+
+```python
+```
+
+
+
+
+
+
+
+
+
+```python
+```
+
+
+
+
+
+
+
+
+```python
+```
+
+
+
+
+
+
+```python
+```
