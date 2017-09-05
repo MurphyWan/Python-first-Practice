@@ -831,15 +831,18 @@ from scipy import stats
 ```
 
 * Then you are able to use some useful statistical function. For example, the cummulative density function of a standard normal distribution is given like
-()
+
+
+![Statistics-in-Scipy](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img010_statistics_in_scipy.jpg)
+
 
 * With this package, we can directly use it like
 
 ```python
-from scipy import statsy = stats.norm.cdf(1.2)
+from scipy import stats
+y = stats.norm.cdf(1.2)
 ```
 
-![Statistics-in-Scipy](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img010_statistics_in_scipy.jpg)
 
 
 
