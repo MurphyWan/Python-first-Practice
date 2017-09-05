@@ -1154,9 +1154,14 @@ plt.title('3D plot of $z = x^2 + y^2$')
 
 * 使用np.linspace()使t ∈ [0，2π]。 然后给  (Use np.linspace0 to make t ∈ [0，2π]. Then give)
   
-  ![2](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img017_2.jpg)
+  
+  ![2](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img017_2.jpg)
   
-  - 针对X绘Y。 在这个情节中添加一个称为“Heart”的标题。 (Plot y against x. Add a title to this plot which is called "Heart" .)
+  
+  
+  - 针对X绘Y。 在这个情节中添加一个称为“Heart”的标题。 (Plot y against x. Add a title to this plot which is called "Heart" .)
+
+
 
 * 针对x∈[-10,10], y∈[-10,10], 绘制3D函数  (Plot the 3D function for x∈[-10,10], y∈[-10,10])
     
@@ -1170,16 +1175,7 @@ plt.title('3D plot of $z = x^2 + y^2$')
 
 
 
-
-
-
-
-
-```python
-```
-
-
-
+## Sympy
 
 
 
@@ -1200,7 +1196,13 @@ plt.title('3D plot of $z = x^2 + y^2$')
 
 
 
+## 符号计算 (Symbolic computation)
 
+* 到目前为止，我们只考虑了数值计算。 (So far, we only considered the numerical computation.)
+
+* Python也可以通过模块表征进行符号计算。(Python can also work with symbolic computation via  module sympy.)
+
+* 符号计算可用于计算方程，积分等的显式解。 (Symbolic computation can be useful for calculating explicit solutions to equations, integrations and so on.)
 
 
 
@@ -1210,7 +1212,24 @@ plt.title('3D plot of $z = x^2 + y^2$')
 ```
 
 
+## 声明一个符号变量 (Declare a symbol variable)
 
+```python
+
+import sympy as sy
+
+#声明x，y为变量
+x = sy.Symbol('x')
+y = sy.Symbol('y')
+a, b = sy.symbols('a b')
+
+#创建一个新符号（不是函数
+f = x**2 + 2 - 2*x + x**2 -1
+print(f)
+#自动简化
+g = x**2 + 2 - 2*x + x**2 -1
+print(g)
+```
 
 
 
@@ -1220,9 +1239,72 @@ plt.title('3D plot of $z = x^2 + y^2$')
 ```
 
 
+## Use of symbol 1: Solve equations
+
+```python
+
+import sympy as sy
+
+x  = sy.Symbol ('x')
+y  = sy.Symbol('y')
+# give [-1, 1]
+print(sy.solve (x**2 - 1))
+# no guarantee for solution
+print(sy.solve(x**3  +  0.5*x**2 - 1))
+# exepress x in terms of y
+print (sy.solve(x**3  +  y**2))
+# error:  no  algorithm  can  be  found
+print(sy.solve(x**x + 2*x - 1))
+```
 
 
 
 
 ```python
+```
+
+
+
+##  Use of symbol 2: Integration   
+
+```python
+import sympy as sy
+x = sy.Symbol('x')
+y = sy.Symbol( 'y')
+b = sy.symbols ( 'a b')
+#single  variable
+f = sy.sin(x) + sy.exp(x)
+print(sy.integrate(f, (x,  a,  b)))
+print(sy.integrate(f, (x,  1,  2)))
+print(sy.integrate(f, (x,  1.0,2.0)))
+#  multi variables
+g = sy.exp(x) + x * sy.sin(y)
+print(sy.integrate(g, (y,a,b)))
+```
+
+
+
+```python
+```
+
+
+## Use of symbol 2: Differentiation
+
+```python
+import sympy as sy
+x =  sy.Symbol( 'x')
+y =  sy.Symbol( 'y')
+#sing1e variable
+f = sy.cos(x) + x**x
+print(sy . diff (f ,  x))
+#  multi variables
+g = sy.cos(y) * x + sy.log(y)
+print(sy.diff (g,  y))
+```
+
+
+```python
+
+第二天结束，辛苦了
+
 ```
