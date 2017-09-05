@@ -3,6 +3,8 @@
 
 # 《三天搞定Python基础概念之第二天》 Day 2 
 
+### Day2，即第二篇主要是讲一些偏计算的Library的使用，也就是numpy，scipy，sympy和matplotlib。
+
 ```
 前言：
 非常感谢Jiang老师将其分享出来！本课件非常经典！
@@ -470,7 +472,7 @@ Out[81]：array（[1,2,3]）      # <-- stop为-1表示倒数第二个数
 
 
 
-## 阵列切片（1D）
+## 数组切片（1D）
 
 * 整个数组：a或a [：]  
 
@@ -635,7 +637,7 @@ Out[34] : array([0,1,100,3,4])
 
 ## 副本和视图 (Copies and views)
 
-* 为避免修改原始数组，可以制作一个片段的副本 (To avoid modifying the original array, one can make a copy of a slice:)
+* 为避免修改原始数组，可以制作一个切片的副本 (To avoid modifying the original array, one can make a copy of a slice:)
 
 ```python
 In [30] : a = np.arange(5); a
@@ -716,6 +718,74 @@ Out[4]: array([ 70, 100])
 ```python
 ```
 
+
+
+## 将数组保存到文件 (Saving arrays to files)
+
+*  savetxt()将表保存到文本文件。 (savetxt() saves a table to a text file.)     
+
+```python     
+In  [1]: a = np,linspace(0. 1, 12); a,shape ' (3, 4); a
+Out [1] :
+array([[ O.  ,  0.09090909, 0.18181818,  0.27272727],
+[  0.36363636,  0.45454545, 0.54545455,  0.63636364],
+[  0.72727273,  0.81818182. 0.90909091,  1.]])
+
+In [2] : np.savetxt("myfile.txt", a)
+```
+
+
+* 其他可用的格式(参见API文档)  {Other formats of file are available (see documentation)}
+
+* save()将表保存为Numpy“.npy”格式的二进制文件 (save() saves a table to a binary file in NumPy ".npy" format.)  
+
+```python    
+  - In [3] : np.save("myfile" ,a)    
+```
+
+
+  - 生成一个二进制文件myfile .npy，其中包含一个可以使用np.load（）加载的文件。 {produces a binary file myfile .npy that contains a and that can be loaded with np.load().}
+
+
+
+
+
+
+
+```python
+```
+
+
+
+
+
+## 将文本文件读入数组 (Reading text files into arrays)
+
+* loadtxt（）将以文本文件存储的表读入数组。 (loadtxt() reads a table stored as a text file into an array.)
+
+* 默认情况下，loadtxt()假定列是用空格分隔的。 您可以通过修改可选的参数进行更改。 以散列（＃）开头的行将被忽略。 (By default, loadtxt() assumes that columns are separated with whitespace. You can change this by modifying optional parameters. Lines starting with hashes (#) are ignored.)
+
+* 示例文本文件data.txt： (Example text file data.txt:)
+      
+      |# Year|  Min temp.|   Hax temp.|  
+      |------|----------|-----------| 
+       |1990|     -1.5 |       25.3|        
+       |1991|     -3.2|        21.2|
+* Code:
+
+```python 
+   In [1] : tabla = np.loadtxt("data.txt")
+   In [2] : table
+   Out[2] :
+   array ([[ 1.99000000e+03,   -1.50000000e+00,   2.53000000e+01],    
+   [ 1.9910000e+03,  -3.2000000e+00,  2.12000000e+01]
+
+```
+
+
+
+```python
+```
 
 ## Numpy包含更高效率的功能
 
