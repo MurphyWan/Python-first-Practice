@@ -885,7 +885,24 @@ plt.title(’$f(x)=ae^{-bx}+c$ curve fitting’)
 
 
 
+## 优化:根搜索 (Optimisation: Root searching)
 
+```python
+
+import numpy as np
+from scipy import optimize
+
+def fun(x):
+    return np.exp(np.exp(x)) - x**2
+
+# 通过初始化点0，找到兴趣0 (find zero of fun with initial point 0)
+# 通过Newton-Raphson方法 (by Newton-Raphson)
+value1 = optimize.newton(fun, 0)
+
+# 通过二分法找到介于(-5,5)之间的 (find zero between (-5,5) by bisection)
+value2 = optimize.bisect(fun, -5, 5)
+
+```
 
 
 
@@ -896,7 +913,7 @@ plt.title(’$f(x)=ae^{-bx}+c$ curve fitting’)
 
 
 
-
+## Matplotlib
 
 
 
@@ -906,7 +923,32 @@ plt.title(’$f(x)=ae^{-bx}+c$ curve fitting’)
 
 
 
+## 最简单的制图 (The simplest plot)
 
+* 导入库需要添加以下内容 
+
+```python
+
+from matplotlib import pyplot as plt
+
+```
+
+* 为了绘制一个函数，我们操作如下 (To plot a function, we do:)
+
+```python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 201)
+#y = x ** 0.5
+#plt.plot(x, y) # default plot
+plt.figure(figsize = (3, 3)) # new fig
+plt.plot(x, x**0.3, ’r--’) # red dashed
+plt.plot(x, x-1, ’k-’) # continue plot
+plt.plot(x, np.zeros_like(x), ’k-’)
+
+```
 
 
 ```python
