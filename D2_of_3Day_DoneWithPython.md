@@ -822,21 +822,21 @@ print(error)
 
 
 
-## Statistics in Scipy
+## 用Scipy进行统计  (Statistics in Scipy)
 
-* scipy has a sub-library for statistical functions, you can import it by
+* scipy具有用于统计功能的子库，您可以导入它 (scipy has a sub-library for statistical functions, you can import it by)
 
 ```python
 from scipy import stats
 ```
 
-* Then you are able to use some useful statistical function. For example, the cummulative density function of a standard normal distribution is given like
+* 然后您可以使用一些有用的统计功能。 例如，给出标准正态分布的累积密度函数（Then you are able to use some useful statistical function. For example, the cummulative density function of a standard normal distribution is given like
 
 
 ![Statistics-in-Scipy](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img010_statistics_in_scipy.jpg)
 
 
-* With this package, we can directly use it like
+* 这个包，我们可以直接使用它，如下: （with this package, we can directly use it like)
 
 ```python
 from scipy import stats
