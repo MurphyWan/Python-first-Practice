@@ -985,3 +985,5 @@ There are three different algorithms of sorting:
 
 ```
 
+
+[传送门-> 第二天的内容](https://github.com/MurphyWan/Python-first-Practice/blob/master/D2_of_3Day_DoneWithPython.md)
