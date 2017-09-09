@@ -1390,6 +1390,7 @@ print(sy.diff (g,  y))
 
 ```
 
+![](http://upload-images.jianshu.io/upload_images/5522220-cd6a23ee687856ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+[传送门-> 第三天的内容](https://github.com/MurphyWan/Python-first-Practice/blob/master/D3_of_3Day_DoneWithPython.md)
 
-[传送门-> 第三天的内容](https://github.com/MurphyWan/Python-first-Practice/blob/master/D_of_3Day_DoneWithPython.md)
