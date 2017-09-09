@@ -41,6 +41,7 @@
 * Day 3: Time series: statistics and real data analysis with Pandas. Stochastics and Monte Carlo.
 
 ```python
+
 ```
 
 
@@ -52,7 +53,10 @@
 > 第三天主要是讲Pandas、Statsmodels等library，是入门的好材料，但想提高还要多加练习。
 ---
 ![](http://upload-images.jianshu.io/upload_images/5522220-6d4a45bc2b3130f1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
---->![](http://upload-images.jianshu.io/upload_images/5522220-6df558ad4d662c99.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+---
+
+
+>![](http://upload-images.jianshu.io/upload_images/5522220-6df558ad4d662c99.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```
 前言：首先，非常感谢Jiang老师将其分享出来！本课件非常经典！经过笔者亲测，竟然确实只要三天，便可管中窥豹洞见Python及主要库的应用。实属难得诚意之作！其次，只是鉴于Jiang老师提供的原始课件用英文写成，而我作为Python的爱好者计算机英文又不太熟练，讲义看起来比较慢，为了提高自学课件的效率，故我花了点时间将其翻译成中文，以便将来自己快速复习用。该版仅用于个人学习之用。再次，译者因工作中需要用到数据分析、风险可视化与管理，因此学习python，翻译水平有限，请谅解。在征得原作者Yupeng Jiang老师的同意后，现在我将中文版本分享给大家。
 ```
