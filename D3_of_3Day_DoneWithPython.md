@@ -652,3 +652,9 @@ print(’Normal test p-value is %f’ \
 
 
 ![](http://upload-images.jianshu.io/upload_images/5522220-cd6a23ee687856ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+[回到第一天(back to D)](https://github.com/MurphyWan/Python-first-Practice/blob/master/D1_of_3Day_DoneWithPython.md)
+
+
+[回到第二天(back to D2)](https://github.com/MurphyWan/Python-first-Practice/blob/master/D2_of_3Day_DoneWithPython.md)
