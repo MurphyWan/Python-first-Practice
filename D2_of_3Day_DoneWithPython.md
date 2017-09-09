@@ -1389,3 +1389,7 @@ print(sy.diff (g,  y))
 第二天结束，辛苦了
 
 ```
+
+
+
+[传送门-> 第三天的内容](https://github.com/MurphyWan/Python-first-Practice/blob/master/D_of_3Day_DoneWithPython.md)
