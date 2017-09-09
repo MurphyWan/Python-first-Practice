@@ -3,7 +3,7 @@
 ---
 
 
-![](http://upload-images.jianshu.io/upload_images/5522220-6d4a45bc2b3130f1.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://upload-images.jianshu.io/upload_images/5522220-1d6e14fc37aba771.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ---
@@ -650,4 +650,5 @@ print(’Normal test p-value is %f’ \
 >##三天全部结束，辛苦了！想必你也获得了不少收获！继续加油，让我们做的更好！
 
 
-![](http://upload-images.jianshu.io/upload_images/5522220-331d4b1bc8135d55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://upload-images.jianshu.io/upload_images/5522220-cd6a23ee687856ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
