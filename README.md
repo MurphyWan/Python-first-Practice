@@ -1,5 +1,5 @@
 # 《三天搞定Python基础概念之第第一天》 Day 1
-## 为【零基础】的人设计，带你串一遍Python的基本操作。若你已经get了Python的基础知识，请直接去第二天的内容 [(传送门-->第二天)](http://www.jianshu.com/p/8551e878de39)
+#### 为【零基础】的人设计，带你串一遍Python的基本操作。若你已经get了Python的基础知识，请直接去第二天的内容 [(传送门-->第二天)](https://github.com/MurphyWan/Python-first-Practice/blob/master/D2_of_3Day_DoneWithPython.md)
 
 ```
 前言：
