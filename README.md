@@ -1,11 +1,12 @@
 # 《三天搞定Python基础概念之第第一天》 Day 1
-#### 为【零基础】的人设计，带你串一遍Python的基本操作。若你已经get了Python的基础知识，请直接去第二天的内容 [(传送门-->第二天)](https://github.com/MurphyWan/Python-first-Practice/blob/master/D2_of_3Day_DoneWithPython.md)
+>#### 为【零基础】的人设计，带你串一遍Python的基本操作。若你已经get了Python的基础知识，请直接去第二天的内容 [(传送门-->第二天)](https://github.com/MurphyWan/Python-first-Practice/blob/master/D2_of_3Day_DoneWithPython.md)
 
 ```
 前言：
 首先，非常感谢Jiang老师将其分享出来！本课件非常经典！
 经过笔者亲测，竟然确实只要三天，便可管中窥豹洞见Python及主要库的应用。实属难得诚意之作！
-其次，只是鉴于Jiang老师提供的原始课件用英文写成，而我作为Python的爱好者计算机英文又不太熟练，讲义看起来比较慢，为了提高自学课件的效率，故我花了点时间将其翻译成中文，以便将来自己快速复习用。
+其次，只是鉴于Jiang老师提供的原始课件用英文写成，而我作为Python的爱好者计算机英文又不太熟练，讲义看起来比较慢。
+为了提高自学课件的效率，故我花了点时间将其翻译成中文，以便将来自己快速复习用。
 该版仅用于个人学习之用。
 再次，译者因工作中需要用到数据分析、风险可视化与管理，因此学习python，翻译水平有限，请谅解。
 在征得原作者Yupeng Jiang老师的同意后，现在我将中文版本分享给大家。
