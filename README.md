@@ -852,3 +852,6 @@ There are three different algorithms of sorting:
 第一天的课程到此结束，辛苦了
 
 ```
+
+[传送门-->第二天(Day2)]https://github.com/MurphyWan/Python-first-Practice/blob/master/D2_of_3Day_DoneWithPython.md)
+
