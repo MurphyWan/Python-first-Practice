@@ -867,10 +867,10 @@ There are three different algorithms of sorting:
 
 ## 目标2  (Target 2)
 
-* 代码功能
+* 编写函数
   - ![notebook-0](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img01.gif)
 
-* 使用派生词的定义，对其数字导数函数进行编码。
+* 使用导数的定义，对其数字导数函数进行编码。
 
 * 找到数值解
 
@@ -903,7 +903,7 @@ There are three different algorithms of sorting:
 
 ## 目标2的提示  (Hint for Target 2:)
 
-* 衍生物可以近似于 
+* 导数可以近似于 
   
   - ![notebook-3](https://github.com/MurphyWan/Python-first-Practice/blob/master/images/3days_img04.gif)
   
